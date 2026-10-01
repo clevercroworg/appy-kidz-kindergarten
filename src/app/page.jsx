@@ -1808,12 +1808,24 @@ export default function HomePage() {
             </div>
           </div>
 
+          <div className="footer-communities-bar">
+            <span className="communities-title">Serving Communities:</span>
+            <div className="communities-tags">
+              <span className="community-pill">Preschool in Kithaganur</span>
+              <span className="community-pill">Daycare Bangalore East</span>
+              <span className="community-pill">Play School near TC Palya</span>
+              <span className="community-pill">Kindergarten Aduru (560049)</span>
+              <span className="community-pill">Nursery near Battarahalli</span>
+              <span className="community-pill">Montessori KR Puram</span>
+            </div>
+          </div>
+
           <div className="footer-bottom-bar">
             <div>
               &copy; {new Date().getFullYear()} Appy Kidz International Pre School. All rights reserved.
             </div>
-            <div>
-              Keywords: Nursery in Kithaganur | Daycare Bangalore East | Pre School TC Palya | Kindergarten Aduru 560049
+            <div className="footer-tagline-note">
+              Awarded Best Pre School Startup — 30th Edition Indian School Awards
             </div>
           </div>
         </div>
