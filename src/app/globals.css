@@ -346,13 +346,13 @@ img {
   overflow: hidden;
 }
 
-/* Full-Width Slider Stage: Generous web height so all banner artwork and text fit without vertical cropping */
+/* Full-Width Slider Stage: Heighted so topbar + header + banner + admission open bar fill a single web viewport */
 .fullwidth-slider-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 6.5;
-  max-height: 640px;
-  min-height: 480px;
+  height: calc(100vh - 175px);
+  max-height: 720px;
+  min-height: 440px;
   overflow: hidden;
   background: #020617;
   cursor: pointer;
@@ -381,7 +381,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 25%;
   display: block;
 }
 
