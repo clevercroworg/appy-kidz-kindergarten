@@ -484,13 +484,95 @@ export default function HomePage() {
     </svg>
   );
 
-  // High-End Custom Programs Array with New Innovative Colorful Faceless Icons
+  // Custom bespoke vector icons for About Highlights
+  const LegacyTrophyIcon = ({ size = 28 }) => (
+    <svg width={size} height={size} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="trophyGoldGrad" x1="4" y1="4" x2="32" y2="30" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FBBF24" />
+          <stop offset="0.5" stopColor="#F59E0B" />
+          <stop offset="1" stopColor="#D97706" />
+        </linearGradient>
+        <linearGradient id="trophyCupGrad" x1="9" y1="6" x2="27" y2="22" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FEF08A" />
+          <stop offset="0.6" stopColor="#F59E0B" />
+          <stop offset="1" stopColor="#B45309" />
+        </linearGradient>
+      </defs>
+      <path d="M9 10C5.5 10 4 12.5 4 15.5C4 18.5 6.5 20 9.5 19.5" stroke="url(#trophyGoldGrad)" strokeWidth="2.5" strokeLinecap="round" />
+      <path d="M27 10C30.5 10 32 12.5 32 15.5C32 18.5 29.5 20 26.5 19.5" stroke="url(#trophyGoldGrad)" strokeWidth="2.5" strokeLinecap="round" />
+      <path d="M8 8H28V16C28 21 23.5 25 18 25C12.5 25 8 21 8 16V8Z" fill="url(#trophyCupGrad)" />
+      <path d="M18 11.5L19.2 14.2L22 14.5L19.9 16.4L20.5 19.2L18 17.8L15.5 19.2L16.1 16.4L14 14.5L16.8 14.2L18 11.5Z" fill="#FFFBEB" />
+      <path d="M16 25H20V28.5H16V25Z" fill="url(#trophyGoldGrad)" />
+      <path d="M11 28.5H25L26 32H10L11 28.5Z" fill="url(#trophyGoldGrad)" />
+      <path d="M8 32H28V33.5C28 34.2 27.2 35 26.5 35H9.5C8.8 35 8 34.2 8 33.5V32Z" fill="#92400E" />
+    </svg>
+  );
+
+  const BrainGrowthIcon = ({ size = 28 }) => (
+    <svg width={size} height={size} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="brainPinkGrad" x1="4" y1="6" x2="32" y2="30" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#F472B6" />
+          <stop offset="0.5" stopColor="#EC4899" />
+          <stop offset="1" stopColor="#DB2777" />
+        </linearGradient>
+      </defs>
+      <path d="M17 11C15 9.5 11 9 9 11.5C6.5 14 6 18 7.5 21C6 22.5 6.5 25.5 8 27C9.5 28.5 12 28.5 13.5 27.5C14.5 28.5 16 28.5 17 28V11Z" fill="url(#brainPinkGrad)" />
+      <path d="M19 11C21 9.5 25 9 27 11.5C29.5 14 30 18 28.5 21C30 22.5 29.5 25.5 28 27C26.5 28.5 24 28.5 22.5 27.5C21.5 28.5 20 28.5 19 28V11Z" fill="url(#brainPinkGrad)" />
+      <path d="M12 16C13.5 16 14.5 17.5 14 19M11 22C12.5 22 13.5 23 13 24.5M24 16C22.5 16 21.5 17.5 22 19M25 22C23.5 22 22.5 23 23 24.5" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" opacity="0.85" />
+      <line x1="18" y1="11" x2="18" y2="28" stroke="#BE185D" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M18 3L19 6L22 7L19 8L18 11L17 8L14 7L17 6L18 3Z" fill="#F59E0B" />
+      <circle cx="8" cy="6" r="1.5" fill="#FBBF24" />
+      <circle cx="28" cy="6" r="1.5" fill="#FBBF24" />
+    </svg>
+  );
+
+  const SafeCampusIcon = ({ size = 28 }) => (
+    <svg width={size} height={size} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="shieldGreenGrad" x1="6" y1="4" x2="30" y2="32" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#34D399" />
+          <stop offset="0.5" stopColor="#10B981" />
+          <stop offset="1" stopColor="#059669" />
+        </linearGradient>
+      </defs>
+      <path d="M18 4L7 8V17C7 24.5 11.5 30.5 18 32C24.5 30.5 29 24.5 29 17V8L18 4Z" fill="url(#shieldGreenGrad)" />
+      <path d="M18 7L10 10.2V17C10 23 13.5 27.8 18 29.2C22.5 27.8 26 23 26 17V10.2L18 7Z" fill="#047857" opacity="0.3" />
+      <path d="M13 17.5L16.5 21L23 13.5" stroke="#FFFFFF" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+
+  const AwardMedalIcon = ({ size = 28 }) => (
+    <svg width={size} height={size} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="medalRedRibbon" x1="10" y1="18" x2="20" y2="34" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#EF4444" />
+          <stop offset="1" stopColor="#B91C1C" />
+        </linearGradient>
+        <linearGradient id="medalGoldCoin" x1="8" y1="4" x2="28" y2="24" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FDE047" />
+          <stop offset="0.5" stopColor="#F59E0B" />
+          <stop offset="1" stopColor="#D97706" />
+        </linearGradient>
+      </defs>
+      <path d="M13 18L9 32L14 30L17 33L16 20" fill="url(#medalRedRibbon)" />
+      <path d="M23 18L27 32L22 30L19 33L20 20" fill="url(#medalRedRibbon)" />
+      <circle cx="18" cy="14" r="10" fill="url(#medalGoldCoin)" />
+      <circle cx="18" cy="14" r="7.8" stroke="#FEF08A" strokeWidth="1.2" fill="#F59E0B" />
+      <path d="M18 9.5L19.3 12.5L22.5 12.8L20.1 15L20.8 18.2L18 16.6L15.2 18.2L15.9 15L13.5 12.8L16.7 12.5L18 9.5Z" fill="#FFFBEB" />
+    </svg>
+  );
+
+  // High-End Custom Programs Array with New Innovative Colorful Faceless Icons & Distinct Shapes
   const programs = [
     {
       id: 'playgroup',
       name: 'Playgroup',
       badge: 'Ages 1.5 - 2.5 yrs',
       badgeClass: 'age-playgroup',
+      cardShapeClass: 'program-card-star',
+      iconShapeClass: 'icon-shape-star',
       circleClass: 'program-circle-playgroup',
       desc: 'Joyful sensory exploration, gross motor games, music play, and affectionate emotional bonding.',
       icon: <PlaygroupIcon />
@@ -500,6 +582,8 @@ export default function HomePage() {
       name: 'Nursery Pre-KG',
       badge: 'Ages 2.5 - 3.5 yrs',
       badgeClass: 'age-nursery',
+      cardShapeClass: 'program-card-arch',
+      iconShapeClass: 'icon-shape-arch',
       circleClass: 'program-circle-nursery',
       desc: 'Phonics readiness, early counting, interactive storytelling, and tactile Montessori sensory apparatus.',
       icon: <NurseryIcon />
@@ -509,6 +593,8 @@ export default function HomePage() {
       name: 'Junior KG',
       badge: 'Ages 3.5 - 4.5 yrs',
       badgeClass: 'age-jrkg',
+      cardShapeClass: 'program-card-round',
+      iconShapeClass: 'icon-shape-round',
       circleClass: 'program-circle-jrkg',
       desc: 'Pre-math fundamentals, language immersion, inquisitive science observations, and peer teamwork.',
       icon: <JrKgIcon />
@@ -518,6 +604,8 @@ export default function HomePage() {
       name: 'Senior KG',
       badge: 'Ages 4.5 - 5.5 yrs',
       badgeClass: 'age-srkg',
+      cardShapeClass: 'program-card-crest',
+      iconShapeClass: 'icon-shape-crest',
       circleClass: 'program-circle-srkg',
       desc: 'Primary school readiness, advanced phonics, mental arithmetic, stage confidence, and creative expression.',
       icon: <SrKgIcon />
@@ -527,6 +615,8 @@ export default function HomePage() {
       name: 'Day Care & Extended',
       badge: 'Ages 1 - 8 yrs',
       badgeClass: 'age-daycare',
+      cardShapeClass: 'program-card-heart',
+      iconShapeClass: 'icon-shape-heart',
       circleClass: 'program-circle-daycare',
       desc: 'Safe, hygienic extended care with nutritious warm meals, sanitized nap suites, and supervised homework.',
       icon: <DaycareIcon />
@@ -859,12 +949,9 @@ export default function HomePage() {
               <li><a href="#hero" className="nav-pill active">Home</a></li>
               <li><a href="#about" className="nav-pill">About Us</a></li>
               <li><a href="#programs" className="nav-pill">Programs</a></li>
-              <li><a href="#proud-moments" className="nav-pill">Proud Moments</a></li>
-              <li><a href="#parents-corner" className="nav-pill">Parents Corner</a></li>
-              <li><a href="#teachers" className="nav-pill">Our Teachers</a></li>
+              <li><a href="#proud-moments" className="nav-pill">Awards</a></li>
               <li><a href="#gallery" className="nav-pill">Events</a></li>
-              <li><a href="#safety" className="nav-pill">Safety</a></li>
-              <li><a href="#locations" className="nav-pill">Locations</a></li>
+              <li><a href="#locations" className="nav-pill">Contact</a></li>
             </ul>
           </nav>
 
@@ -968,10 +1055,10 @@ export default function HomePage() {
         <div className="hero-conversion-bar">
           <div className="container conversion-bar-content">
             <div className="conversion-lead">
-              <span className="conversion-pulse-dot"></span>
-              <span className="conversion-lead-text">
-                <strong>Admissions Open 2026-27</strong> • Play Group, Nursery, Jr. KG, Sr. KG & Day Care
-              </span>
+              <div className="conversion-lead-text">
+                <strong className="conversion-title-line">Admissions Open 2026-27</strong>
+                <span className="conversion-programs-line">Play Group, Nursery, Jr. KG, Sr. KG & Day Care</span>
+              </div>
             </div>
             <div className="conversion-btn-group">
               <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
@@ -1014,24 +1101,39 @@ export default function HomePage() {
               
               <div className="about-compact-highlights">
                 <div className="about-highlight-pill">
-                  <span className="about-pill-icon">🏆</span>
-                  <div>
+                  <div className="about-pill-icon-box icon-box-trophy">
+                    <LegacyTrophyIcon size={28} />
+                  </div>
+                  <div className="about-pill-text">
                     <strong>17+ Years</strong>
                     <span>Educational Legacy</span>
                   </div>
                 </div>
                 <div className="about-highlight-pill">
-                  <span className="about-pill-icon">🧠</span>
-                  <div>
+                  <div className="about-pill-icon-box icon-box-brain">
+                    <BrainGrowthIcon size={28} />
+                  </div>
+                  <div className="about-pill-text">
                     <strong>90% Brain Growth</strong>
                     <span>Montessori Play-Way</span>
                   </div>
                 </div>
                 <div className="about-highlight-pill">
-                  <span className="about-pill-icon">🛡️</span>
-                  <div>
+                  <div className="about-pill-icon-box icon-box-safe">
+                    <SafeCampusIcon size={28} />
+                  </div>
+                  <div className="about-pill-text">
                     <strong>100% Safe</strong>
                     <span>Child-Proofed Campus</span>
+                  </div>
+                </div>
+                <div className="about-highlight-pill">
+                  <div className="about-pill-icon-box icon-box-award">
+                    <AwardMedalIcon size={28} />
+                  </div>
+                  <div className="about-pill-text">
+                    <strong>Award Winning</strong>
+                    <span>Indian School Awards</span>
                   </div>
                 </div>
               </div>
@@ -1080,20 +1182,16 @@ export default function HomePage() {
           <div className="section-header-center">
             <span className="section-tag">Play-Way & Montessori Curriculum</span>
             <h2 className="section-title-large">Our Programs</h2>
-            <p className="section-subtitle-text">
-              Thoughtfully engineered developmental stages that empower children with curiosity, literacy, emotional resilience, and boundless confidence.
-            </p>
           </div>
 
           <div className="programs-icon-grid">
             {programs.map((prog) => (
-              <div key={prog.id} className="program-icon-card">
-                <div className={`program-circle-icon ${prog.circleClass}`}>
+              <div key={prog.id} className={`program-icon-card ${prog.cardShapeClass}`}>
+                <div className={`program-circle-icon ${prog.circleClass} ${prog.iconShapeClass}`}>
                   {prog.icon}
                 </div>
                 <h3 className="program-card-name">{prog.name}</h3>
                 <span className={`program-age-pill ${prog.badgeClass}`}>{prog.badge}</span>
-                <p className="program-short-desc">{prog.desc}</p>
                 <button
                   onClick={() => {
                     setFormData({ ...formData, program: prog.name });
@@ -1296,44 +1394,39 @@ export default function HomePage() {
 
             <div className="parents-feature-list">
               <div className="parent-feature-item">
-                <CheckCircle2 size={22} color="#FEF08A" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <div>
-                  <strong>Milestone Progress Trackers</strong>
-                  <p style={{ fontSize: '0.85rem', opacity: 0.9 }}>Regular constructive insights into speech, motor skills, and social behavior.</p>
+                <div className="parent-check-bubble">
+                  <CheckCircle2 size={18} color="#854D0E" strokeWidth={3} />
                 </div>
+                <strong className="milestone-heading">Milestone Progress Trackers</strong>
               </div>
               <div className="parent-feature-item">
-                <CheckCircle2 size={22} color="#FEF08A" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <div>
-                  <strong>Nutritious Meal Plans</strong>
-                  <p style={{ fontSize: '0.85rem', opacity: 0.9 }}>Pediatrician-aligned dietary recommendations for growing toddlers.</p>
+                <div className="parent-check-bubble">
+                  <CheckCircle2 size={18} color="#854D0E" strokeWidth={3} />
                 </div>
+                <strong className="milestone-heading">Nutritious Meal Plans</strong>
               </div>
               <div className="parent-feature-item">
-                <CheckCircle2 size={22} color="#FEF08A" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <div>
-                  <strong>Home Play Activity Guides</strong>
-                  <p style={{ fontSize: '0.85rem', opacity: 0.9 }}>Simple weekend games that reinforce phonics and spatial thinking.</p>
+                <div className="parent-check-bubble">
+                  <CheckCircle2 size={18} color="#854D0E" strokeWidth={3} />
                 </div>
+                <strong className="milestone-heading">Home Play Activity Guides</strong>
               </div>
               <div className="parent-feature-item">
-                <CheckCircle2 size={22} color="#FEF08A" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <div>
-                  <strong>Positive Parenting Webinars</strong>
-                  <p style={{ fontSize: '0.85rem', opacity: 0.9 }}>Expert sessions addressing tantrums, screen time, and gentle discipline.</p>
+                <div className="parent-check-bubble">
+                  <CheckCircle2 size={18} color="#854D0E" strokeWidth={3} />
                 </div>
+                <strong className="milestone-heading">Positive Parenting Webinars</strong>
               </div>
             </div>
 
-            <button
-              onClick={() => {
-                alert('Appy Kidz Parent Handbook & Syllabus overview will be sent to your WhatsApp!');
-                window.open('https://wa.me/917022261013?text=Hi!%20Please%20share%20the%20Appy%20Kidz%20Parent%20Handbook%20and%20Curriculum%20Overview.', '_blank');
-              }}
+            <a
+              href="https://wa.me/917022261013?text=Hi!%20Please%20share%20the%20Appy%20Kidz%20Parent%20Handbook%20and%20Curriculum%20Overview."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-read-more-parent"
             >
               Get Parent Handbook <ExternalLink size={16} />
-            </button>
+            </a>
           </div>
         </div>
       </section>

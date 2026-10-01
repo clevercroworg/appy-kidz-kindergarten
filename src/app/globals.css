@@ -291,8 +291,8 @@ img {
 .nav-pill {
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 0.92rem;
-  padding: 8px 14px;
+  font-size: 0.88rem;
+  padding: 7px 12px;
   border-radius: var(--radius-full);
   transition: all 0.2s ease;
   white-space: nowrap;
@@ -346,12 +346,13 @@ img {
   overflow: hidden;
 }
 
-/* Full-Width Slider Stage: Reduced height so it fits desktop & mobile gracefully */
+/* Full-Width Slider Stage: Generous web height so all banner artwork and text fit without vertical cropping */
 .fullwidth-slider-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 6.2;
-  max-height: 380px;
+  aspect-ratio: 16 / 6.5;
+  max-height: 640px;
+  min-height: 480px;
   overflow: hidden;
   background: #020617;
   cursor: pointer;
@@ -467,7 +468,7 @@ img {
   background: #FFFFFF;
   border-bottom: 2px solid #E2E8F0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .conversion-bar-content {
@@ -481,39 +482,30 @@ img {
 .conversion-lead {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  color: #1E293B;
+  gap: 12px;
 }
 
-.conversion-pulse-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #EF4444;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
-  animation: conversionPulse 1.6s infinite;
-  flex-shrink: 0;
+.conversion-lead-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: left;
 }
 
-@keyframes conversionPulse {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
-  }
-}
-
-.conversion-lead-text strong {
+.conversion-title-line {
   color: #B91C1C;
   font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.conversion-programs-line {
+  color: #475569;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .conversion-btn-group {
@@ -659,40 +651,79 @@ img {
 
 .about-compact-highlights {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 26px;
 }
 
 .about-highlight-pill {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 12px;
-  padding: 10px 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1.5px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.about-pill-icon {
-  font-size: 1.35rem;
-  line-height: 1;
+.about-highlight-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #CBD5E1;
+}
+
+.about-pill-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box-trophy {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border: 1.5px solid #FCD34D;
+}
+
+.icon-box-brain {
+  background: linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%);
+  border: 1.5px solid #F9A8D4;
+}
+
+.icon-box-safe {
+  background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+  border: 1.5px solid #6EE7B7;
+}
+
+.icon-box-award {
+  background: linear-gradient(135deg, #FEF9C3 0%, #FEF08A 100%);
+  border: 1.5px solid #FDE047;
+}
+
+.about-pill-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-highlight-pill strong {
   display: block;
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: #0F172A;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .about-highlight-pill span {
   display: block;
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   color: #64748B;
-  line-height: 1.2;
+  line-height: 1.25;
+  margin-top: 2px;
 }
 
 .about-compact-actions {
@@ -924,18 +955,63 @@ img {
   box-shadow: 0 8px 22px rgba(16, 185, 129, 0.15);
 }
 
+/* Custom Playful Shapes for Program Cards (Star, Arch, Round, Crest, Heart) */
+.program-card-star {
+  border-radius: 46px 18px 46px 18px !important;
+  border: 2px solid #FECDD3 !important;
+  background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 100%) !important;
+}
+.program-card-arch {
+  border-radius: 72px 72px 24px 24px !important;
+  border: 2px solid #FDE68A !important;
+  background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 100%) !important;
+}
+.program-card-round {
+  border-radius: 48px !important;
+  border: 2px solid #BAE6FD !important;
+  background: linear-gradient(180deg, #F0F9FF 0%, #FFFFFF 100%) !important;
+}
+.program-card-crest {
+  border-radius: 18px 52px 18px 52px !important;
+  border: 2px solid #DDD6FE !important;
+  background: linear-gradient(180deg, #FAF5FF 0%, #FFFFFF 100%) !important;
+}
+.program-card-heart {
+  border-radius: 52px 52px 28px 28px !important;
+  border: 2px solid #A7F3D0 !important;
+  background: linear-gradient(180deg, #ECFDF5 0%, #FFFFFF 100%) !important;
+}
+
+/* Distinct Icon Silhouette Shapes */
+.icon-shape-star {
+  border-radius: 30px 14px 30px 14px !important;
+}
+.icon-shape-arch {
+  border-radius: 46px 46px 18px 18px !important;
+}
+.icon-shape-round {
+  border-radius: 50% !important;
+}
+.icon-shape-crest {
+  border-radius: 16px 36px 16px 36px !important;
+}
+.icon-shape-heart {
+  border-radius: 38px 38px 20px 20px !important;
+}
+
 .program-card-name {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 800;
   color: #1E293B;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .program-age-pill {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: var(--radius-full);
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .age-playgroup { background: #FEE2E2; color: #DC2626; }
@@ -943,14 +1019,6 @@ img {
 .age-jrkg { background: #E0F2FE; color: #0284C7; }
 .age-srkg { background: #EDE9FE; color: #7C3AED; }
 .age-daycare { background: #D1FAE5; color: #059669; }
-
-.program-short-desc {
-  font-size: 0.88rem;
-  color: #64748B;
-  line-height: 1.55;
-  margin-bottom: 18px;
-  flex-grow: 1;
-}
 
 .program-link-btn {
   font-size: 0.88rem;
@@ -1175,22 +1243,51 @@ img {
 
 .parents-feature-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 10px 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 18px 0 24px;
 }
 
 .parent-feature-item {
   background: rgba(255,255,255,0.16);
   backdrop-filter: blur(8px);
-  padding: 16px 18px;
-  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  border-radius: var(--radius-lg);
   border: 1px solid rgba(255,255,255,0.25);
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.95rem;
+  align-items: center;
+  gap: 14px;
   color: #FFFFFF;
+  transition: all 0.25s ease;
+}
+
+.parent-check-bubble {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #FEF08A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.parent-feature-item:hover {
+  background: rgba(255,255,255,0.24);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.milestone-heading,
+.parent-feature-item strong {
+  display: inline-block;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.3;
+  margin: 0 !important;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
 }
 
 .btn-read-more-parent {
@@ -2506,8 +2603,28 @@ img {
   }
 
   .about-compact-highlights {
-    grid-template-columns: 1fr !important;
-    gap: 8px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .about-highlight-pill {
+    padding: 10px 10px !important;
+    gap: 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .about-pill-icon-box {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 11px !important;
+  }
+
+  .about-highlight-pill strong {
+    font-size: 0.92rem !important;
+  }
+
+  .about-highlight-pill span {
+    font-size: 0.74rem !important;
   }
 
   .about-main-img {
@@ -2544,7 +2661,7 @@ img {
   
   /* Conversion Bar below banner on mobile */
   .hero-conversion-bar {
-    padding: 10px 0 !important;
+    padding: 16px 14px 18px !important;
   }
   
   .conversion-bar-content {
@@ -2556,7 +2673,23 @@ img {
   
   .conversion-lead {
     justify-content: center !important;
-    font-size: 0.84rem !important;
+    text-align: center !important;
+  }
+
+  .conversion-lead-text {
+    align-items: center !important;
+    text-align: center !important;
+    gap: 2px !important;
+  }
+
+  .conversion-title-line {
+    font-size: 1.05rem !important;
+    text-align: center !important;
+  }
+
+  .conversion-programs-line {
+    font-size: 0.82rem !important;
+    text-align: center !important;
   }
   
   .conversion-btn-group {
@@ -3059,7 +3192,7 @@ img {
   
   /* Conversion Bar below banner on mobile */
   .hero-conversion-bar {
-    padding: 10px 0 !important;
+    padding: 16px 14px 18px !important;
   }
   
   .conversion-bar-content {
@@ -3723,6 +3856,21 @@ img {
     grid-template-columns: 1fr;
     max-width: 100%;
     box-sizing: border-box;
+  }
+
+  .program-card-name {
+    font-size: 1.55rem !important;
+    font-weight: 900 !important;
+  }
+
+  .parents-feature-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .milestone-heading,
+  .parent-feature-item strong {
+    font-size: 1.22rem !important;
+    font-weight: 800 !important;
   }
   
   .proud-grid {
