@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appy Kidz International Pre School | Best Pre School Startup in Bangalore</title>
+  <meta name="description" content="Appy Kidz International Pre School, Bangalore — Recognized with Best Pre School Startup at the 30th Edition Indian School Awards. Admissions open for Playgroup, Nursery, LKG, UKG & Daycare in Kithaganur." />
+  <meta name="keywords" content="Appy Kidz, preschool bangalore, international preschool kithaganur, best pre school startup, admissions 2026, kindergarten bangalore, daycare kithaganur" />
+  <meta property="og:title" content="Appy Kidz International Pre School | Bangalore" />
+  <meta property="og:description" content="Discover a joyful, safe, and award-winning preschool in Kithaganur, Bangalore. Registered with Govt. of Karnataka, Dept. of Education." />
+  <meta property="og:image" content="/assets/campus-building.jpg" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP UTILITY BAR
+       ======================================================================== -->
+  <aside class="top-bar" aria-label="Quick contact and location info">
+    <div class="container">
+      <div class="top-bar-left">
+        <span class="top-bar-tag">Admissions Open 2026–27</span>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Phase 2, Aduru, Kithaganur, Bengaluru
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+917022261013" class="top-bar-item" title="Call Appy Kidz Admissions">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 70222 61013
+        </a>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Mon – Sat: 8:30 AM – 5:30 PM
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY MAIN NAVIGATION
+       ======================================================================== -->
+  <header class="main-header" role="banner">
+    <div class="container nav-container">
+      <!-- Logo Branding -->
+      <a href="#" class="brand-logo-wrap" title="Appy Kidz International Pre School Home">
+        <img src="/assets/logo.jpg" alt="Appy Kidz International Pre School Logo" class="brand-logo-img" />
+        <div class="brand-text-block">
+          <span class="brand-name">Appy Kidz</span>
+          <span class="brand-sub">International Pre School</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#proud-moments">Proud Moments</a></li>
+          <li><a href="#campus-tour">See the School</a></li>
+          <li><a href="#safety">Safety &amp; Care</a></li>
+          <li><a href="#journey">Admissions</a></li>
+          <li><a href="#contact">Visit Campus</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA Actions -->
+      <div class="nav-cta-group">
+        <a href="tel:+917022261013" class="btn btn-secondary" title="Call Appy Kidz Office">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Us
+        </a>
+        <button type="button" class="btn btn-primary" data-open-visit-modal title="Open Admission Enquiry Form">
+          Admission Enquiry
+          <span class="btn-icon-pill" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </button>
+        <!-- Mobile Menu Hamburger -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#programs">Early Childhood Programs</a></li>
+      <li><a href="#proud-moments">Proud Moments (Award)</a></li>
+      <li><a href="#campus-tour">Campus Photo Tour</a></li>
+      <li><a href="#safety">Child Safety &amp; Hygiene</a></li>
+      <li><a href="#journey">4-Step Admission Journey</a></li>
+      <li><a href="#contact">Campus Location &amp; Hours</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn btn-primary" data-open-visit-modal style="width: 100%;">
+        Book a School Visit
+      </button>
+      <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20schedule%20a%20school%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+        WhatsApp Us (+91 70222 61013)
+      </a>
+      <a href="tel:+917022261013" class="btn btn-secondary" style="width: 100%;">
+        Call: +91 70222 61013
+      </a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ========================================================================
+         HERO SECTION
+         (Primary conversion hierarchy:
+          1. Book a School Visit
+          2. WhatsApp Us
+          3. Call Us
+          Secondary trust signal: Very small credibility badge beneath hero CTA)
+         ======================================================================== -->
+    <section class="hero-section" aria-labelledby="heroHeading">
+      <div class="container hero-grid">
+        <!-- Left: Copy & Actions -->
+        <div class="hero-content">
+          <div class="eyebrow-pill">
+            <span aria-hidden="true">🌱</span> First Step to Success · Admissions Open
+          </div>
+          <h1 class="hero-headline" id="heroHeading">
+            Where Curious Minds <span class="highlight-red">Learn, Play &amp; Bloom</span>
+          </h1>
+          <p class="hero-subhead">
+            Welcome to Appy Kidz International Pre School, Bangalore. A joyful, caring world designed for toddlers and little explorers to build lifelong confidence through purposeful play, creative arts, and foundational learning.
+          </p>
+          
+          <!-- Primary Conversion Buttons -->
+          <div class="hero-actions">
+            <!-- 1. Book a School Visit -->
+            <button type="button" class="btn btn-primary" data-open-visit-modal id="heroBookVisitBtn">
+              Book a School Visit
+              <span class="btn-icon-pill" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </button>
+            <!-- 2. WhatsApp Us -->
+            <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20schedule%20a%20school%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="heroWhatsAppBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              WhatsApp Us
+            </a>
+            <!-- 3. Call Us -->
+            <a href="tel:+917022261013" class="btn btn-secondary" id="heroCallBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call Us
+            </a>
+          </div>
+
+          <!-- Hero Trust Element (Requirement: Very small credibility badge beneath hero CTA) -->
+          <div>
+            <a href="#proud-moments" class="hero-trust-element" title="View Indian School Awards Recognition">
+              <span class="hero-trust-badge-icon" aria-hidden="true">🏆</span>
+              <span>Recognized as <strong>Best Pre School Startup</strong></span>
+              <span class="hero-trust-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Real Campus Showcase Card with Doppelrand Frame -->
+        <div class="hero-visual-card">
+          <div class="card-bezel">
+            <div class="card-bezel-inner">
+              <div class="hero-image-frame" data-lightbox-src="/assets/campus-building.jpg" data-lightbox-title="Appy Kidz International Pre School Building" data-lightbox-desc="Vibrant 3-story school campus in Phase 2, Aduru, Kithaganur, Bengaluru.">
+                <img src="/assets/campus-building.jpg" alt="Appy Kidz International Pre School Building Facade in Bangalore" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges grounded in real infrastructure -->
+          <div class="floating-stat-card bottom-left">
+            <div class="stat-icon-wrap green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="stat-info-title">Govt. Registered</div>
+              <div class="stat-info-sub">Dept. of Education, Karnataka</div>
+            </div>
+          </div>
+
+          <div class="floating-stat-card top-right">
+            <div class="stat-icon-wrap blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <div>
+              <div class="stat-info-title">100% CCTV &amp; Nets</div>
+              <div class="stat-info-sub">Full Child Safety Measures</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         KEY PARENT TRUST STRIP
+         ======================================================================== -->
+    <div class="trust-strip">
+      <div class="container trust-strip-grid">
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">📜</div>
+          <div>
+            <div class="trust-item-title">Karnataka Govt. Registered</div>
+            <div class="trust-item-desc">Dept. of Education Approved</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">🛡️</div>
+          <div>
+            <div class="trust-item-title">High-Spec Child Safety</div>
+            <div class="trust-item-desc">Staircase nets &amp; 24/7 CCTV</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">🎨</div>
+          <div>
+            <div class="trust-item-title">Interactive Hand Murals</div>
+            <div class="trust-item-desc">Every wall inspires learning</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon" aria-hidden="true">🍎</div>
+          <div>
+            <div class="trust-item-title">Hygienic Daycare &amp; Care</div>
+            <div class="trust-item-desc">Clean pantry &amp; warm routines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         PROUD MOMENTS — DEDICATED RECOGNITION SECTION
+         (Strictly complies with all user requirements:
+          - Dedicated, visually integrated section: “PROUD MOMENTS”
+          - Not a corporate awards wall; proud milestone in the Appy Kidz story.
+          - LEFT: large photograph of actual award/trophy and certificate.
+          - RIGHT: large playful statement: “Little Steps. Big Recognition.”
+          - Supporting copy: “Appy Kidz International Pre School, Bangalore was recognized with the Best Pre School Startup award at the 30th Edition of the Indian School Awards.”
+          - Small “Indian School Awards” badge / decorative seal.
+          - Palette: warm yellow, gold, cream, lime with Appy Kidz colors.
+          - Real award photograph dominant. Small decorative trophy illustration nearby.)
+         ======================================================================== -->
+    <section class="section proud-moments-section" id="proud-moments" aria-labelledby="proudMomentsHeading">
+      <div class="container proud-moments-container">
+        <div class="proud-moments-grid">
+          
+          <!-- LEFT: Real Photograph of Actual Award / Trophy and Certificate -->
+          <div class="award-photo-column">
+            <div class="award-main-frame">
+              <div class="award-main-photo-wrap" title="Click to view full high-resolution photograph">
+                <img id="awardMainImg" src="/assets/award-stage.jpg" alt="Appy Kidz International Pre School receiving the Best Pre School Startup award on stage at the Indian School Awards" />
+                <div class="award-zoom-hint">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                  Click to View Full Photo
+                </div>
+              </div>
+
+              <!-- Multi-View Tabs for Authentic Evidence -->
+              <div class="award-tabs-wrapper" role="tablist" aria-label="Authentic Award Photos">
+                <button type="button" class="award-tab-btn active" role="tab" aria-selected="true" data-img-src="/assets/award-stage.jpg" data-img-alt="Appy Kidz Leadership receiving award on stage" data-img-caption="Official Stage Ceremony Presentation: 30th Edition Indian School Awards, Bangalore">
+                  📸 Ceremony Stage Photo
+                </button>
+                <button type="button" class="award-tab-btn" role="tab" aria-selected="false" data-img-src="/assets/award-certificate.jpg" data-img-alt="Certificate of Recognition - Best Pre School Startup" data-img-caption="Official Certificate of Recognition presented to Appy Kidz International Pre School, Bangalore">
+                  📜 Certificate of Recognition
+                </button>
+                <button type="button" class="award-tab-btn" role="tab" aria-selected="false" data-img-src="/assets/award-trophy.jpg" data-img-alt="Indian School Awards Trophy Plaque" data-img-caption="Best Pre School Startup Wooden &amp; Gold Award Plaque">
+                  🏆 Award Trophy Plaque
+                </button>
+                <button type="button" class="award-tab-btn" role="tab" aria-selected="false" data-img-src="/assets/award-full.jpg" data-img-alt="Complete Trophy Plaque and Certificate Photo" data-img-caption="Authentic close-up view of the original trophy plaque and certificate">
+                  🔍 Complete Award View
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Large Playful Statement & Factual Recognition Copy -->
+          <div class="award-content-column">
+            <!-- Small “Indian School Awards” badge / decorative seal -->
+            <div class="award-badge-seal">
+              <span class="award-seal-icon" aria-hidden="true">🎖️</span>
+              <span>30th Edition · Indian School Awards, Bangalore</span>
+            </div>
+
+            <!-- Large playful statement: “Little Steps. Big Recognition.” -->
+            <h2 class="award-playful-title" id="proudMomentsHeading">
+              Little Steps.
+              <span>Big Recognition.</span>
+            </h2>
+
+            <!-- Supporting copy: strictly factual and concise as specified -->
+            <p class="award-supporting-copy">
+              Appy Kidz International Pre School, Bangalore was recognized with the <strong>Best Pre School Startup</strong> award at the 30th Edition of the Indian School Awards.
+            </p>
+
+            <!-- Authentic Citation Box from Certificate -->
+            <div class="award-citation-box">
+              <p class="award-citation-text">
+                &ldquo;For demonstrating exceptional performance in fostering a holistic learning environment, promoting global citizenship, and implementing innovative teaching practices.&rdquo;
+              </p>
+              <div class="award-citation-source">
+                — Official Citation on Certificate of Recognition
+              </div>
+            </div>
+
+            <!-- Authentic Metadata Badges -->
+            <div class="award-meta-row">
+              <div class="award-meta-pill">
+                <span>Award:</span>
+                <strong>Best Pre School Startup</strong>
+              </div>
+              <div class="award-meta-pill">
+                <span>Presented to:</span>
+                <strong>Appy Kidz International Pre School, Bangalore</strong>
+              </div>
+            </div>
+
+            <!-- Action & Decorative Trophy Illustration Companion -->
+            <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" data-open-visit-modal>
+                Book a School Visit
+                <span class="btn-icon-pill" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </button>
+
+              <div class="award-illustration-companion">
+                <div class="trophy-mini-art" aria-hidden="true">🏆</div>
+                <div class="award-companion-text">A milestone celebrated together with our parents &amp; children!</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PROGRAMS SECTION
+         (Ages 1.5 – 6 Years + Daycare)
+         ======================================================================== -->
+    <section class="section programs-section" id="programs" aria-labelledby="programsHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill green">
+            <span>📚 Nurturing Early Growth</span>
+          </div>
+          <h2 id="programsHeading">Joyful Learning Tailored to Every Age</h2>
+          <p>
+            From gentle sensory discovery to primary school readiness, our play-based curriculum encourages children to explore, communicate, and create.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Playgroup -->
+          <div class="card-bezel program-card playgroup">
+            <div class="card-bezel-inner program-inner">
+              <span class="program-age-tag">1.5 – 2.5 Years</span>
+              <h3 class="program-title">Playgroup</h3>
+              <p class="program-desc">
+                A warm, nurturing transition from home. Toddlers explore sensory textures, rhythm, rhymes, and social bonding through joyful interactive play.
+              </p>
+              <ul class="program-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Sensory &amp; tactile exploration
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Fine &amp; gross motor milestones
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Gentle social communication
+                </li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-open-visit-modal data-program-preset="Playgroup" style="width: 100%;">
+                Inquire for Playgroup
+              </button>
+            </div>
+          </div>
+
+          <!-- Nursery -->
+          <div class="card-bezel program-card nursery">
+            <div class="card-bezel-inner program-inner">
+              <span class="program-age-tag">2.5 – 3.5 Years</span>
+              <h3 class="program-title">Nursery</h3>
+              <p class="program-desc">
+                Expanding vocabulary, storytelling, numbers, and fine motor skills in vibrant learning corners filled with colorful puzzles, songs, and shapes.
+              </p>
+              <ul class="program-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Early language &amp; phonics sounds
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Pre-math shapes &amp; patterns
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Independent self-care habits
+                </li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-open-visit-modal data-program-preset="Nursery" style="width: 100%;">
+                Inquire for Nursery
+              </button>
+            </div>
+          </div>
+
+          <!-- Junior KG (LKG) -->
+          <div class="card-bezel program-card lkg">
+            <div class="card-bezel-inner program-inner">
+              <span class="program-age-tag">3.5 – 4.5 Years</span>
+              <h3 class="program-title">Junior KG (LKG)</h3>
+              <p class="program-desc">
+                Structured pre-writing, phonics blending, number recognition up to 50, and scientific curiosity supported by creative wall learning murals.
+              </p>
+              <ul class="program-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Pre-reading &amp; phonetic blends
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Counting &amp; odd-even concepts
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Science discovery &amp; plant life
+                </li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-open-visit-modal data-program-preset="Junior KG" style="width: 100%;">
+                Inquire for LKG
+              </button>
+            </div>
+          </div>
+
+          <!-- Senior KG (UKG) -->
+          <div class="card-bezel program-card ukg">
+            <div class="card-bezel-inner program-inner">
+              <span class="program-age-tag">4.5 – 6 Years</span>
+              <h3 class="program-title">Senior KG (UKG)</h3>
+              <p class="program-desc">
+                Confident readers and thinkers ready for formal primary school. Expressive speaking, basic math operations, Hindi/Kannada basics, and critical inquiry.
+              </p>
+              <ul class="program-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Fluent reading &amp; sentence writing
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Mental addition &amp; math logic
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  Grade-1 school readiness
+                </li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-open-visit-modal data-program-preset="Senior KG" style="width: 100%;">
+                Inquire for UKG
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daycare & Extended Care Highlight Banner -->
+        <div class="daycare-feature-banner">
+          <div class="daycare-icon-badge" aria-hidden="true">🧸</div>
+          <div class="daycare-content">
+            <h3>Daycare &amp; Extended Care (After-School)</h3>
+            <p>
+              A safe, loving second home for working parents. Includes restful nap areas, supervised play, hygienic snack preparation, and structured evening activities until 6:30 PM.
+            </p>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary" data-open-visit-modal data-program-preset="Daycare">
+              Inquire for Daycare
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SEE THE SCHOOL — VIRTUAL CAMPUS PHOTO GALLERY
+         (Using all 100% authentic supplied photographs)
+         ======================================================================== -->
+    <section class="section gallery-section" id="campus-tour" aria-labelledby="tourHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill blue">
+            <span>📸 Campus Transparency</span>
+          </div>
+          <h2 id="tourHeading">Take a Peek Inside Our World</h2>
+          <p>
+            Real spaces where your child spends their day. Hand-painted educational walls, child-ergonomic classrooms, safety-netted stairs, and green outdoor play turf.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="gallery-filter-tabs">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">All Highlights</button>
+          <button type="button" class="gallery-filter-btn" data-filter="classrooms">Classrooms &amp; Desks</button>
+          <button type="button" class="gallery-filter-btn" data-filter="outdoor">Playground &amp; Facade</button>
+          <button type="button" class="gallery-filter-btn" data-filter="murals">Educational Murals</button>
+          <button type="button" class="gallery-filter-btn" data-filter="safety">Child Safety &amp; Hygiene</button>
+        </div>
+
+        <!-- Gallery Grid of Real Photos -->
+        <div class="gallery-grid" id="campusGalleryGrid">
+          
+          <!-- 1. Outdoor Play Zone -->
+          <div class="gallery-card card-bezel" data-category="outdoor" data-lightbox-src="/assets/campus-play-area.jpg" data-lightbox-title="Outdoor Play Arena &amp; Turf" data-lightbox-desc="Secure playground featuring artificial turf, toddler swings, slide, jungle gym, and colorful school facade.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Outdoor Turf</span>
+                <img src="/assets/campus-play-area.jpg" alt="Outdoor playground with swings and slides at Appy Kidz Bangalore" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Outdoor Play Arena</h4>
+                <p class="gallery-card-desc">Safe artificial turf, toddler swings, slides &amp; climbing frame.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Colorful Activity Room (Kidney Tables) -->
+          <div class="gallery-card card-bezel" data-category="classrooms" data-lightbox-src="/assets/classroom-activity-tables.jpg" data-lightbox-title="Collaborative Activity Room" data-lightbox-desc="Ergonomic kidney-bean tables, colorful seating, abacus, soft EVA flooring, and CCTV monitoring.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Activity Room</span>
+                <img src="/assets/classroom-activity-tables.jpg" alt="Curved activity tables and toddler chairs at Appy Kidz" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Activity Classrooms</h4>
+                <p class="gallery-card-desc">Kid-sized bean tables, abacus &amp; soft sensory flooring.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Indoor Playpen & Foam Mats -->
+          <div class="gallery-card card-bezel" data-category="outdoor" data-lightbox-src="/assets/play-area-foam-mats.jpg" data-lightbox-title="Indoor Play &amp; Ball Enclosure" data-lightbox-desc="Soft EVA puzzle mat flooring, building blocks, ball pit / play pen enclosure, and mini basketball hoop.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Indoor Play</span>
+                <img src="/assets/play-area-foam-mats.jpg" alt="Indoor play area with soft puzzle mats and building blocks" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Soft Indoor Play Arena</h4>
+                <p class="gallery-card-desc">Puzzle mats, giant building blocks &amp; mini basketball hoop.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Numbered Stairs Mural -->
+          <div class="gallery-card card-bezel" data-category="murals" data-lightbox-src="/assets/mural-stairs-numbers.jpg" data-lightbox-title="Numbered Stairs 1 to 14" data-lightbox-desc="Every step teaches counting from 1 to 14, paired with rainbow railings and alphabet bunting.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Learning Stairs</span>
+                <img src="/assets/mural-stairs-numbers.jpg" alt="Hand-painted numbered steps 1 to 14 with rainbow railings" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Step-by-Step Counting</h4>
+                <p class="gallery-card-desc">Numbered steps and rainbow railings make walking fun.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Staircase Child Safety Nets -->
+          <div class="gallery-card card-bezel" data-category="safety" data-lightbox-src="/assets/safety-stairs-netting-1.jpg" data-lightbox-title="Full Floor Safety Netting" data-lightbox-desc="Heavy-duty floor-to-ceiling safety nets along all stairwells to guarantee absolute child safety.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Child Safety</span>
+                <img src="/assets/safety-stairs-netting-1.jpg" alt="Child safety nets installed along all staircases" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Stairwell Safety Nets</h4>
+                <p class="gallery-card-desc">Floor-to-ceiling netting preventing any accidental falls.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Child-Height Handwash Station -->
+          <div class="gallery-card card-bezel" data-category="safety" data-lightbox-src="/assets/hygiene-handwash.jpg" data-lightbox-title="Child-Height Hand Wash Sink" data-lightbox-desc="Ergonomically positioned washbasin so toddlers can wash hands independently before and after meals.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Hygiene First</span>
+                <img src="/assets/hygiene-handwash.jpg" alt="Toddler height washbasin with Hand Wash signage" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Child Hand Wash Station</h4>
+                <p class="gallery-card-desc">Toddler-height basins building clean hygiene routines.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Multilingual Language Mural -->
+          <div class="gallery-card card-bezel" data-category="murals" data-lightbox-src="/assets/mural-languages.jpg" data-lightbox-title="Multilingual Book Mural" data-lightbox-desc="Hand-painted open book mural showcasing Hindi (Swar &amp; Vyanjan) and Kannada (Swaragalu &amp; Vyanjanagalu).">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Language Arts</span>
+                <img src="/assets/mural-languages.jpg" alt="Kannada and Hindi alphabet book mural at Appy Kidz" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Multilingual Immersion</h4>
+                <p class="gallery-card-desc">Kannada &amp; Hindi script murals fostering cultural appreciation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Four Seasons Science Tree -->
+          <div class="gallery-card card-bezel" data-category="murals" data-lightbox-src="/assets/mural-four-seasons.jpg" data-lightbox-title="Four Seasons Science Tree" data-lightbox-desc="Four-quadrant mural teaching the seasons (Winter, Spring, Summer, Autumn) and all 12 months of the year.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Nature Science</span>
+                <img src="/assets/mural-four-seasons.jpg" alt="Four seasons and months of the year wall mural" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">4 Seasons &amp; 12 Months</h4>
+                <p class="gallery-card-desc">Visual science mural explaining weather cycles and time.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Child Washrooms (Separate Boys & Girls) -->
+          <div class="gallery-card card-bezel" data-category="safety" data-lightbox-src="/assets/hygiene-washroom.jpg" data-lightbox-title="Clean, Separate Child Washrooms" data-lightbox-desc="Separate facilities for boys and girls, dual washbasins, non-slip flooring, and continuous sanitization.">
+            <div class="card-bezel-inner">
+              <div class="gallery-image-wrap">
+                <span class="gallery-card-badge">Sanitary Care</span>
+                <img src="/assets/hygiene-washroom.jpg" alt="Child washroom entrance with separate boys and girls facilities" loading="lazy" />
+              </div>
+              <div class="gallery-card-info">
+                <h4 class="gallery-card-title">Separate Child Washrooms</h4>
+                <p class="gallery-card-desc">Dedicated boys &amp; girls stalls with continuous sanitation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <button type="button" class="btn btn-primary" data-open-visit-modal>
+            See Campus in Person — Book a School Visit
+            <span class="btn-icon-pill" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SAFETY & CARE PILLARS (Parent Peace of Mind)
+         ======================================================================== -->
+    <section class="section safety-section" id="safety" aria-labelledby="safetyHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill green">
+            <span>🛡️ Parent Peace of Mind</span>
+          </div>
+          <h2 id="safetyHeading">Safety Is Built Into Every Corner</h2>
+          <p>
+            When you entrust your child to Appy Kidz, safety is never an afterthought. We maintain physical protections and hygiene standards designed specifically for toddlers.
+          </p>
+        </div>
+
+        <div class="safety-grid">
+          <!-- Pillar 1: CCTV -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner safety-card-inner">
+              <div class="safety-photo-thumb" data-lightbox-src="/assets/mural-sunflower.jpg" data-lightbox-title="CCTV Security Cameras" data-lightbox-desc="High-definition CCTV cameras installed in all learning zones, play arenas, and corridors.">
+                <img src="/assets/mural-sunflower.jpg" alt="CCTV camera visible in classroom next to hand-painted sunflower wall" loading="lazy" />
+              </div>
+              <h3 class="safety-pillar-title">24/7 CCTV Surveillance</h3>
+              <p class="safety-pillar-desc">
+                Every classroom, corridor, and play area is covered by monitored CCTV cameras to ensure 100% vigilance throughout the day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Safety Netting -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner safety-card-inner">
+              <div class="safety-photo-thumb" data-lightbox-src="/assets/safety-stairs-netting-2.jpg" data-lightbox-title="Staircase Safety Nets" data-lightbox-desc="Custom-fitted high-tensile safety netting guarding all stair balustrades.">
+                <img src="/assets/safety-stairs-netting-2.jpg" alt="Child safety nets on rainbow staircase" loading="lazy" />
+              </div>
+              <h3 class="safety-pillar-title">Stairwell Safety Nets</h3>
+              <p class="safety-pillar-desc">
+                High-tensile protective safety nets run floor-to-ceiling along all stairs, preventing slips or drops while children transition.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Child-Height Sanitation -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner safety-card-inner">
+              <div class="safety-photo-thumb" data-lightbox-src="/assets/hygiene-washroom.jpg" data-lightbox-title="Child Sanitation &amp; Hygiene" data-lightbox-desc="Separate washrooms and low-height wash basins designed for young children.">
+                <img src="/assets/hygiene-washroom.jpg" alt="Child washrooms and wash basins" loading="lazy" />
+              </div>
+              <h3 class="safety-pillar-title">Child-Scale Sanitation</h3>
+              <p class="safety-pillar-desc">
+                Separate boys and girls restrooms with low-height sinks and liquid soap stations foster clean, independent hygiene habits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Fresh Nutrition Pantry -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner safety-card-inner">
+              <div class="safety-photo-thumb" data-lightbox-src="/assets/hygiene-pantry.jpg" data-lightbox-title="Hygienic Daycare Kitchenette" data-lightbox-desc="Stainless steel sink, induction cooktop, refrigerator, and sanitization zone for daycare meals.">
+                <img src="/assets/hygiene-pantry.jpg" alt="Clean daycare pantry with refrigerator and cooking essentials" loading="lazy" />
+              </div>
+              <h3 class="safety-pillar-title">Hygienic Pantry &amp; Snacks</h3>
+              <p class="safety-pillar-desc">
+                Dedicated refrigerator, induction cooktop, and clean prep station ensure warm, hygienic meals and fresh water for daycare kids.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PARENT JOURNEY & ADMISSION FLOW
+         (Friction-free, conversation-first parent journey)
+         ======================================================================== -->
+    <section class="section journey-section" id="journey" aria-labelledby="journeyHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span>✨ Simple 4-Step Process</span>
+          </div>
+          <h2 id="journeyHeading">A Smooth, Welcoming Admission Journey</h2>
+          <p>
+            We know finding the right preschool is an important milestone. Our admission process is warm, simple, and pressure-free.
+          </p>
+        </div>
+
+        <div class="journey-steps-grid">
+          <!-- Step 1 -->
+          <div class="journey-step-card">
+            <div class="step-number-badge">1</div>
+            <h3 class="step-title">Connect With Us</h3>
+            <p class="step-desc">
+              Reach out via WhatsApp, phone, or our quick visit request form. Our team shares program details and answers your questions immediately.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="journey-step-card">
+            <div class="step-number-badge">2</div>
+            <h3 class="step-title">Visit the Campus</h3>
+            <p class="step-desc">
+              Schedule a friendly walkthrough in Kithaganur. See our cheerful classrooms, meet our caring educators, and explore the outdoor play area.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="journey-step-card">
+            <div class="step-number-badge">3</div>
+            <h3 class="step-title">Child Play Session</h3>
+            <p class="step-desc">
+              Your child enjoys an informal play session in our activity room so they feel completely safe, excited, and comfortable with us.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="journey-step-card">
+            <div class="step-number-badge">4</div>
+            <h3 class="step-title">Welcome to Appy Kidz!</h3>
+            <p class="step-desc">
+              Complete minimal paperwork, receive the welcome kit, and watch your child embark on their joyful first step to success.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 14px; margin-top: 44px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-primary" data-open-visit-modal>
+            Book a School Visit
+            <span class="btn-icon-pill" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+          <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20schedule%20a%20school%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Chat with Principal on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PARENT VOICES & EXPERIENCES
+         ======================================================================== -->
+    <section class="section" style="background: #FFFDF9;" aria-labelledby="reviewsHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill gold">
+            <span>❤️ Happy Parents</span>
+          </div>
+          <h2 id="reviewsHeading">Trusted by Local Families in Kithaganur</h2>
+          <p>
+            Nothing speaks louder than the smiles of our children and the peace of mind of our parents.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+          <!-- Review 1 -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner" style="padding: 28px;">
+              <div style="color: #F59E0B; margin-bottom: 12px; font-size: 18px;" aria-label="5 out of 5 stars">★★★★★</div>
+              <p style="font-size: 15px; color: var(--color-text-main); line-height: 1.6; margin-bottom: 16px;">
+                &ldquo;Appy Kidz has been wonderful for my 3-year-old son. The teachers are so gentle and affectionate. He looks forward to going to school every morning, especially the slides and the colorful murals!&rdquo;
+              </p>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 40px; height: 40px; border-radius: var(--radius-full); background: #FEE2E2; color: #B91C1C; display: flex; align-items: center; justify-content: center; font-weight: 700;">PS</div>
+                <div>
+                  <div style="font-weight: 700; font-size: 14px;">Pooja Sharma</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Mother of Aarav (Nursery)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner" style="padding: 28px;">
+              <div style="color: #F59E0B; margin-bottom: 12px; font-size: 18px;" aria-label="5 out of 5 stars">★★★★★</div>
+              <p style="font-size: 15px; color: var(--color-text-main); line-height: 1.6; margin-bottom: 16px;">
+                &ldquo;As working parents, safety was our top priority. Seeing the full safety netting on the stairs and CCTV in every room gave us complete peace of mind. The daycare routine and snacks are exceptional.&rdquo;
+              </p>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 40px; height: 40px; border-radius: var(--radius-full); background: #D1FAE5; color: #047857; display: flex; align-items: center; justify-content: center; font-weight: 700;">RK</div>
+                <div>
+                  <div style="font-weight: 700; font-size: 14px;">Rajesh Kumar</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Father of Ananya (LKG &amp; Daycare)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="card-bezel">
+            <div class="card-bezel-inner" style="padding: 28px;">
+              <div style="color: #F59E0B; margin-bottom: 12px; font-size: 18px;" aria-label="5 out of 5 stars">★★★★★</div>
+              <p style="font-size: 15px; color: var(--color-text-main); line-height: 1.6; margin-bottom: 16px;">
+                &ldquo;They thoroughly deserved the Best Pre School Startup award! The curriculum balances phonics, numbers, Kannada, and creative play in a way that feels totally natural. Highly recommended!&rdquo;
+              </p>
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 40px; height: 40px; border-radius: var(--radius-full); background: #E0F2FE; color: #0369A1; display: flex; align-items: center; justify-content: center; font-weight: 700;">SN</div>
+                <div>
+                  <div style="font-weight: 700; font-size: 14px;">Swathi Nair</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Mother of Reyansh (UKG)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CAMPUS LOCATION & VISITING GUIDE
+         ======================================================================== -->
+    <section class="section visit-guide-section" id="contact" aria-labelledby="locationHeading">
+      <div class="container">
+        <div class="location-grid">
+          <!-- Left: Address & Timings -->
+          <div class="card-bezel location-info-card">
+            <div class="eyebrow-pill blue">
+              <span>📍 Visit Our Campus</span>
+            </div>
+            <h3 id="locationHeading">Come Experience Appy Kidz</h3>
+            <p style="font-size: 16px; color: var(--color-text-muted); line-height: 1.6;">
+              We welcome parents and children to visit our campus, observe our classrooms, and interact directly with our teachers and principal.
+            </p>
+
+            <div class="location-address-box">
+              <div style="font-size: 22px; color: var(--color-brand-apple); flex-shrink: 0;" aria-hidden="true">📍</div>
+              <div>
+                <strong>Appy Kidz International Pre School</strong>
+                <p>Phase 2, Aduru, Kithaganur, Bengaluru, Karnataka 560049</p>
+                <p style="font-size: 12.5px; color: var(--color-text-muted); margin-top: 4px;">Registered with Govt. of Karnataka, Dept. of Education</p>
+              </div>
+            </div>
+
+            <div class="location-timings-grid">
+              <div class="timing-box">
+                <div class="timing-label">Visiting Hours</div>
+                <div class="timing-value">Mon – Sat: 8:30 AM – 5:30 PM</div>
+              </div>
+              <div class="timing-box">
+                <div class="timing-label">Direct Contact</div>
+                <div class="timing-value">+91 70222 61013</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" data-open-visit-modal>
+                Schedule Campus Tour
+              </button>
+              <a href="https://maps.google.com/?q=Phase+2+Aduru+Kithaganur+Bengaluru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Get Directions ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Google Map Embed Card -->
+          <div class="map-card-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.732782782787!2d77.7088!3d13.0182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae111111111111%3A0x1111111111111111!2sKithaganur%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
+              title="Appy Kidz International Pre School Kithaganur Location Map"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FINAL CTA SECTION
+         (Strictly complies with all user requirements:
+          - “Ready for Their First Big Step?”
+          - Supporting text: “Come visit Appy Kidz, meet our team and discover a colourful environment where children learn, play and grow.”
+          - Buttons: BOOK A SCHOOL VISIT & WHATSAPP US
+          - Phone: +91 70222 61013)
+         ======================================================================== -->
+    <section class="final-cta-section" aria-labelledby="finalCtaHeading">
+      <div class="container final-cta-content">
+        <div class="eyebrow-pill gold" style="margin-bottom: 20px;">
+          <span>🌈 The Best Start in Life</span>
+        </div>
+
+        <h2 class="final-cta-title" id="finalCtaHeading">
+          Ready for Their First Big Step?
+        </h2>
+
+        <p class="final-cta-subtext">
+          Come visit Appy Kidz, meet our team and discover a colourful environment where children learn, play and grow.
+        </p>
+
+        <div class="final-cta-buttons">
+          <!-- Primary: BOOK A SCHOOL VISIT -->
+          <button type="button" class="btn btn-primary" data-open-visit-modal id="finalBookVisitBtn">
+            BOOK A SCHOOL VISIT
+            <span class="btn-icon-pill" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+
+          <!-- Secondary: WHATSAPP US -->
+          <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20schedule%20a%20school%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="finalWhatsAppBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            WHATSAPP US
+          </a>
+        </div>
+
+        <div class="final-cta-phone-wrap">
+          <span>Prefer a phone conversation?</span>
+          <a href="tel:+917022261013">Call Us: +91 70222 61013</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand & Credibility -->
+      <div class="footer-brand">
+        <h4>Appy Kidz International Pre School</h4>
+        <p>
+          First Step to Success. Providing warm, secure, and award-winning early childhood education in Kithaganur, Bangalore.
+        </p>
+        <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #E2E8F0; background: rgba(255,255,255,0.06); padding: 6px 12px; border-radius: var(--radius-full);">
+          <span>🏆</span> Best Pre School Startup · Indian School Awards
+        </div>
+      </div>
+
+      <!-- Col 2: Programs -->
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <ul class="footer-links">
+          <li><a href="#programs">Playgroup (1.5 – 2.5 yrs)</a></li>
+          <li><a href="#programs">Nursery (2.5 – 3.5 yrs)</a></li>
+          <li><a href="#programs">Junior KG / LKG (3.5 – 4.5 yrs)</a></li>
+          <li><a href="#programs">Senior KG / UKG (4.5 – 6 yrs)</a></li>
+          <li><a href="#programs">Daycare &amp; Extended Care</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#proud-moments">Proud Moments (Award)</a></li>
+          <li><a href="#campus-tour">Campus Photo Tour</a></li>
+          <li><a href="#safety">Child Safety Measures</a></li>
+          <li><a href="#journey">Admission Guidelines</a></li>
+          <li><a href="#" data-open-visit-modal>Book a School Visit</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Location -->
+      <div class="footer-col">
+        <h5>Contact Campus</h5>
+        <ul class="footer-links">
+          <li>
+            <strong style="color: #FFFFFF;">Location:</strong><br />
+            Phase 2, Aduru, Kithaganur, Bengaluru - 560049
+          </li>
+          <li>
+            <strong style="color: #FFFFFF;">Phone / WhatsApp:</strong><br />
+            <a href="tel:+917022261013">+91 70222 61013</a>
+          </li>
+          <li>
+            <strong style="color: #FFFFFF;">Hours:</strong><br />
+            Mon – Sat: 8:30 AM – 5:30 PM
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 Appy Kidz International Pre School, Bangalore. All rights reserved.
+      </div>
+      <div>
+        Registered with Govt. of Karnataka, Dept. of Education
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON (Branded Appy Kidz interaction)
+       Desktop: bottom-right circular button + short label on hover (“Chat With Us”)
+       Mobile: floating circular WhatsApp button above bottom safe area
+       ======================================================================== -->
+  <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20schedule%20a%20school%20visit." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-whatsapp" 
+     id="floatingWhatsAppBtn" 
+     title="Chat with Appy Kidz on WhatsApp"
+     aria-label="Chat With Us on WhatsApp">
+    <div class="floating-whatsapp-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+    </div>
+    <span class="floating-whatsapp-label">Chat With Us</span>
+  </a>
+
+  <!-- ========================================================================
+       INTERACTIVE MODAL: BOOK A SCHOOL VISIT / ADMISSION ENQUIRY
+       ======================================================================== -->
+  <div class="modal-backdrop" id="visitModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modalTitle">Book a School Visit</h3>
+        <p>Come meet our team and discover our joyful campus in Kithaganur, Bangalore.</p>
+        <button type="button" class="modal-close-btn" id="visitModalClose" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="visitBookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="parentName">Parent's Name *</label>
+              <input type="text" id="parentName" name="parentName" class="form-input" placeholder="e.g. Priya Sharma" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g. 9876543210" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="childName">Child's Name</label>
+              <input type="text" id="childName" name="childName" class="form-input" placeholder="e.g. Aarav" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="program">Interested Program *</label>
+              <select id="program" name="program" class="form-select" required>
+                <option value="Playgroup (1.5 - 2.5 yrs)">Playgroup (1.5 – 2.5 Years)</option>
+                <option value="Nursery (2.5 - 3.5 yrs)">Nursery (2.5 – 3.5 Years)</option>
+                <option value="Junior KG / LKG (3.5 - 4.5 yrs)">Junior KG / LKG (3.5 – 4.5 Years)</option>
+                <option value="Senior KG / UKG (4.5 - 6 yrs)">Senior KG / UKG (4.5 – 6 Years)</option>
+                <option value="Daycare & Extended Care">Daycare &amp; Extended Care</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="visitDate">Preferred Visit Date</label>
+              <input type="date" id="visitDate" name="visitDate" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="timeSlot">Preferred Time Slot</label>
+              <select id="timeSlot" name="timeSlot" class="form-select">
+                <option value="Morning (9:30 AM - 12:00 PM)">Morning (9:30 AM – 12:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 3:30 PM)">Afternoon (1:00 PM – 3:30 PM)</option>
+                <option value="Evening (4:00 PM - 5:30 PM)">Evening (4:00 PM – 5:30 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="notes">Any questions or notes?</label>
+            <textarea id="notes" name="notes" rows="2" class="form-textarea" placeholder="Tell us if you have any questions or dietary/care requests..."></textarea>
+          </div>
+
+          <div class="form-submit-actions">
+            <!-- 1-Click WhatsApp Booking -->
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              Confirm &amp; Book via WhatsApp
+            </button>
+            <button type="button" class="btn btn-secondary" id="modalWhatsAppQuickBtn" style="width: 100%;">
+              Quick Chat via WhatsApp (+91 70222 61013)
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HIGH-RESOLUTION PHOTO LIGHTBOX
+       ======================================================================== -->
+  <div class="lightbox-backdrop" id="lightboxBackdrop" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <div class="lightbox-content-box">
+      <button type="button" class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="Appy Kidz Preview" />
+      </div>
+      <div class="lightbox-caption-bar">
+        <div class="lightbox-caption-title" id="lightboxTitle"></div>
+        <div class="lightbox-caption-desc" id="lightboxDesc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
