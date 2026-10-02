@@ -482,23 +482,23 @@ export default function HomePage() {
       </section>
 
       {/* 2B. SECTION 3: EXACT BRIEF HERO HEADING, SUPPORTING LINE & INTRO */}
-      <section className="hero-brief-box" style={{ background: '#FFFFFF', borderBottom: '2px solid #E2E8F0', padding: '36px 0 32px', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-        <div className="hero-brief-container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
-          <span className="section-tag" style={{ background: '#DCFCE7', color: '#166534', marginBottom: '12px', display: 'inline-block' }}>
+      <section className="hero-brief-box">
+        <div className="container hero-brief-container">
+          <span className="section-tag hero-admissions-tag">
             Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
           </span>
-          <h1 className="hero-h1-heading" style={{ fontFamily: 'var(--font-heading)', fontSize: '2.3rem', fontWeight: 800, color: '#1E293B', marginBottom: '8px', lineHeight: 1.2 }}>
+          <h1 className="hero-h1-heading">
             Preschool, Nursery &amp; Daycare in Kithaganur
           </h1>
-          <p className="hero-h1-tagline" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#559E18', marginBottom: '14px' }}>
+          <p className="hero-h1-tagline">
             Little steps. Happy discoveries. A confident start.
           </p>
-          <p className="hero-h1-desc" style={{ fontSize: '1.05rem', color: '#475569', lineHeight: 1.65, maxWidth: '820px', margin: '0 auto 24px' }}>
+          <p className="hero-h1-desc desktop-only-desc">
             At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
           </p>
-          <div className="hero-h1-actions" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+          <div className="hero-h1-actions">
             <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
-              <Calendar size={18} /> Book a School Visit
+              <Calendar size={17} /> Book a School Visit
             </button>
             <a
               href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
@@ -506,10 +506,10 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="btn-secondary-wa"
             >
-              <WhatsAppIcon size={18} /> Enquire on WhatsApp
+              <WhatsAppIcon size={17} /> Enquire on WhatsApp
             </a>
             <a href="tel:+917022261013" className="btn-call-hero">
-              <Phone size={16} /> +91 70222 61013
+              <Phone size={15} /> +91 70222 61013
             </a>
           </div>
         </div>
@@ -620,9 +620,6 @@ export default function HomePage() {
           <div className="section-header-center">
             <span className="section-tag">Play-Way &amp; Montessori Learning</span>
             <h2 className="section-title-large">Preschool and Daycare Programmes</h2>
-            <p className="section-subtitle-text">
-              Age-appropriate programmes structured for joyful discovery, foundational literacy, numeracy, and gentle social development.
-            </p>
           </div>
 
           <div className="programs-icon-grid">
@@ -751,10 +748,10 @@ export default function HomePage() {
           <div className="section-header-center">
             <span className="section-tag">Engaging Experiences</span>
             <h2 className="section-title-large">Learning Through Play, Stories and Discovery</h2>
-            <p className="section-subtitle-text" style={{ maxWidth: '800px', margin: '0 auto 12px' }}>
+            <p className="section-subtitle-text">
               Learning becomes meaningful when children take part. At Appy Kidz, early learning includes storytelling, rhymes, art, Montessori activities and practical exploration.
             </p>
-            <p style={{ color: '#64748B', fontSize: '0.96rem', maxWidth: '780px', margin: '0 auto', lineHeight: 1.6 }}>
+            <p className="desktop-only-text" style={{ color: '#64748B', fontSize: '0.96rem', maxWidth: '780px', margin: '8px auto 0', lineHeight: 1.6 }}>
               These experiences give children opportunities to build vocabulary, practise coordination, notice patterns, express ideas and work alongside others. Our approach encourages curiosity while helping children become familiar with simple routines and classroom responsibilities.
             </p>
           </div>
