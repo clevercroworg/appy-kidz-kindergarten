@@ -429,88 +429,35 @@ export default function HomePage() {
       {/* 2B. SECTION 3: EXACT BRIEF HERO HEADING, SUPPORTING LINE & INTRO */}
       <section className="hero-brief-box">
         <div className="container hero-brief-container">
-          <div className="hero-brief-grid">
-            {/* Left Column: Brief Copy & CTAs */}
-            <div className="hero-brief-main">
-              <div className="hero-tag-wrap">
-                <span className="section-tag hero-admissions-tag">
-                  <span className="admissions-pulse-dot" />
-                  Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
-                </span>
-              </div>
-              <h1 className="hero-h1-heading">
-                Preschool, Nursery &amp; Daycare in Kithaganur
-              </h1>
-              <p className="hero-h1-tagline">
-                Little steps. Happy discoveries. A confident start.
-              </p>
-              <p className="hero-h1-desc desktop-only-desc">
-                At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
-              </p>
-              <div className="hero-h1-actions">
-                <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
-                  <Calendar size={18} /> Book a School Visit
-                </button>
-                <a
-                  href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary-wa"
-                >
-                  <WhatsAppIcon size={18} /> Enquire on WhatsApp
-                </a>
-                <a href="tel:+917022261013" className="btn-call-hero">
-                  <Phone size={16} /> +91 70222 61013
-                </a>
-              </div>
-            </div>
-
-            {/* Right Column: Key Campus Credentials & Quick Admission Badge (Balances PC Layout) */}
-            <div className="hero-brief-card">
-              <div className="hero-card-header">
-                <div className="hero-card-badge">
-                  <Star size={14} className="star-icon" />
-                  <span>Kithaganur Campus</span>
-                </div>
-                <h3 className="hero-card-title">Admissions 2026-27</h3>
-                <p className="hero-card-sub">Aduru, Kithaganur, Bengaluru</p>
-              </div>
-
-              <div className="hero-card-items">
-                <div className="hero-card-row">
-                  <div className="hero-card-row-icon icon-grad">🎓</div>
-                  <div>
-                    <strong>Early Childhood Programmes</strong>
-                    <span>Playgroup, Nursery, Jr &amp; Sr KG (1.5 – 6 yrs)</span>
-                  </div>
-                </div>
-                <div className="hero-card-row">
-                  <div className="hero-card-row-icon icon-trophy">🏆</div>
-                  <div>
-                    <strong>Award-Winning Excellence</strong>
-                    <span>Best Pre School Startup — Indian School Awards</span>
-                  </div>
-                </div>
-                <div className="hero-card-row">
-                  <div className="hero-card-row-icon icon-clock">🕒</div>
-                  <div>
-                    <strong>Campus Hours</strong>
-                    <span>Mon – Sat: 8:30 AM – 6:30 PM</span>
-                  </div>
-                </div>
-                <div className="hero-card-row">
-                  <div className="hero-card-row-icon icon-shield">🛡️</div>
-                  <div>
-                    <strong>Child Safety Standards</strong>
-                    <span>Floor-to-Ceiling Nets &amp; Sanitized Facilities</span>
-                  </div>
-                </div>
-              </div>
-
-              <button onClick={() => setIsModalOpen(true)} className="hero-card-btn">
-                <span>Book a Campus Tour</span>
-                <ChevronRight size={16} />
+          <div className="hero-brief-content">
+            <span className="section-tag hero-admissions-tag">
+              <span className="admissions-pulse-dot" />
+              Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
+            </span>
+            <h1 className="hero-h1-heading">
+              Preschool, Nursery &amp; Daycare in Kithaganur
+            </h1>
+            <p className="hero-h1-tagline">
+              Little steps. Happy discoveries. A confident start.
+            </p>
+            <p className="hero-h1-desc desktop-only-desc">
+              At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
+            </p>
+            <div className="hero-h1-actions">
+              <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
+                <Calendar size={18} /> Book a School Visit
               </button>
+              <a
+                href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary-wa"
+              >
+                <WhatsAppIcon size={18} /> Enquire on WhatsApp
+              </a>
+              <a href="tel:+917022261013" className="btn-call-hero">
+                <Phone size={16} /> +91 70222 61013
+              </a>
             </div>
           </div>
         </div>
