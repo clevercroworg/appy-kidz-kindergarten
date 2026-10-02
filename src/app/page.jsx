@@ -38,9 +38,6 @@ export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [isBannerPaused, setIsBannerPaused] = useState(false);
 
-  // Mobile Carousel state for Events Gallery
-  const [activeEventIndex, setActiveEventIndex] = useState(0);
-
   // Testimonials Showcase State (10 Authentic Reviews)
   const [activeTestiIndex, setActiveTestiIndex] = useState(0);
   const [isTestiPaused, setIsTestiPaused] = useState(false);
@@ -222,51 +219,6 @@ export default function HomePage() {
     </svg>
   );
 
-  const events = [
-    {
-      title: 'The Thirsty Crow',
-      category: 'Storytelling & Language',
-      badgeClass: 'badge-story',
-      img: '/assets/official/event-thirsty-crow.jpg',
-      desc: 'Classic moral storytelling using interactive puppet theatre and clay pitcher props to spark imagination and language fluency.'
-    },
-    {
-      title: 'Montessori Knob Cylinder',
-      category: 'Sensory & Motor Precision',
-      badgeClass: 'badge-montessori',
-      img: '/assets/official/event-knob-cylinder.jpg',
-      desc: 'Developing fine motor pincher grips, dimensional discernment (height vs diameter), and self-correction through authentic apparatus.'
-    },
-    {
-      title: 'Vinayagar Chaturthi',
-      category: 'Cultural Celebrations',
-      badgeClass: 'badge-culture',
-      img: '/assets/official/event-vinayagar.jpg',
-      desc: 'Joyful festival immersion celebrating diversity, traditional rangoli patterns, teamwork, and festive music appreciation.'
-    },
-    {
-      title: 'Nature Field Trip',
-      category: 'Outdoor Discovery',
-      badgeClass: 'badge-outdoor',
-      img: '/assets/official/event-field-trip.jpg',
-      desc: 'Guided farm & botanical garden excursions where children connect with nature, observe flora and fauna, and build eco-awareness.'
-    },
-    {
-      title: 'Bathing Activity Playgroup',
-      category: 'Sensory Water Fun',
-      badgeClass: 'badge-sensory',
-      img: '/assets/official/event-bathing.jpg',
-      desc: 'Delightful splash and water sensory play teaching basic personal hygiene, bubbles observation, water pouring, and coordination.'
-    },
-    {
-      title: 'Rolling the Mat Pre-KG',
-      category: 'Montessori Order & Grace',
-      badgeClass: 'badge-life',
-      img: '/assets/official/event-rolling-mat.jpg',
-      desc: 'Inculcating habits of mindfulness, care for equipment, physical equilibrium, and respecting personal work spaces.'
-    }
-  ];
-
   const safetyItems = [
     {
       img: '/assets/safety-stairs-netting-1.jpg',
@@ -411,13 +363,6 @@ export default function HomePage() {
     setActiveTestiIndex((prev) => (prev - 1 + parentTestimonials.length) % parentTestimonials.length);
   };
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveEventIndex((prev) => (prev + 1) % events.length);
-    }, 2500);
-    return () => clearInterval(timer);
-  }, [events.length]);
-
   return (
     <>
       {/* 1. SHARED GLOBAL NAVBAR */}
@@ -484,33 +429,89 @@ export default function HomePage() {
       {/* 2B. SECTION 3: EXACT BRIEF HERO HEADING, SUPPORTING LINE & INTRO */}
       <section className="hero-brief-box">
         <div className="container hero-brief-container">
-          <span className="section-tag hero-admissions-tag">
-            Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
-          </span>
-          <h1 className="hero-h1-heading">
-            Preschool, Nursery &amp; Daycare in Kithaganur
-          </h1>
-          <p className="hero-h1-tagline">
-            Little steps. Happy discoveries. A confident start.
-          </p>
-          <p className="hero-h1-desc desktop-only-desc">
-            At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
-          </p>
-          <div className="hero-h1-actions">
-            <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
-              <Calendar size={17} /> Book a School Visit
-            </button>
-            <a
-              href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary-wa"
-            >
-              <WhatsAppIcon size={17} /> Enquire on WhatsApp
-            </a>
-            <a href="tel:+917022261013" className="btn-call-hero">
-              <Phone size={15} /> +91 70222 61013
-            </a>
+          <div className="hero-brief-grid">
+            {/* Left Column: Brief Copy & CTAs */}
+            <div className="hero-brief-main">
+              <div className="hero-tag-wrap">
+                <span className="section-tag hero-admissions-tag">
+                  <span className="admissions-pulse-dot" />
+                  Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
+                </span>
+              </div>
+              <h1 className="hero-h1-heading">
+                Preschool, Nursery &amp; Daycare in Kithaganur
+              </h1>
+              <p className="hero-h1-tagline">
+                Little steps. Happy discoveries. A confident start.
+              </p>
+              <p className="hero-h1-desc desktop-only-desc">
+                At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
+              </p>
+              <div className="hero-h1-actions">
+                <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
+                  <Calendar size={18} /> Book a School Visit
+                </button>
+                <a
+                  href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary-wa"
+                >
+                  <WhatsAppIcon size={18} /> Enquire on WhatsApp
+                </a>
+                <a href="tel:+917022261013" className="btn-call-hero">
+                  <Phone size={16} /> +91 70222 61013
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column: Key Campus Credentials & Quick Admission Badge (Balances PC Layout) */}
+            <div className="hero-brief-card">
+              <div className="hero-card-header">
+                <div className="hero-card-badge">
+                  <Star size={14} className="star-icon" />
+                  <span>Kithaganur Campus</span>
+                </div>
+                <h3 className="hero-card-title">Admissions 2026-27</h3>
+                <p className="hero-card-sub">Aduru, Kithaganur, Bengaluru</p>
+              </div>
+
+              <div className="hero-card-items">
+                <div className="hero-card-row">
+                  <div className="hero-card-row-icon icon-grad">🎓</div>
+                  <div>
+                    <strong>Early Childhood Programmes</strong>
+                    <span>Playgroup, Nursery, Jr &amp; Sr KG (1.5 – 6 yrs)</span>
+                  </div>
+                </div>
+                <div className="hero-card-row">
+                  <div className="hero-card-row-icon icon-trophy">🏆</div>
+                  <div>
+                    <strong>Award-Winning Excellence</strong>
+                    <span>Best Pre School Startup — Indian School Awards</span>
+                  </div>
+                </div>
+                <div className="hero-card-row">
+                  <div className="hero-card-row-icon icon-clock">🕒</div>
+                  <div>
+                    <strong>Campus Hours</strong>
+                    <span>Mon – Sat: 8:30 AM – 6:30 PM</span>
+                  </div>
+                </div>
+                <div className="hero-card-row">
+                  <div className="hero-card-row-icon icon-shield">🛡️</div>
+                  <div>
+                    <strong>Child Safety Standards</strong>
+                    <span>Floor-to-Ceiling Nets &amp; Sanitized Facilities</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onClick={() => setIsModalOpen(true)} className="hero-card-btn">
+                <span>Book a Campus Tour</span>
+                <ChevronRight size={16} />
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -630,7 +631,7 @@ export default function HomePage() {
               </div>
               <h3 className="program-card-name">Playgroup</h3>
               <span className="program-age-pill age-playgroup">1.5 – 2.5 years</span>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.5, margin: '10px 0 16px' }}>
+              <p className="program-card-desc">
                 A gentle introduction to learning beyond home. Stories, songs, sensory exploration and guided play help children become familiar with a classroom routine and spending time with other children.
               </p>
               <button
@@ -648,7 +649,7 @@ export default function HomePage() {
               </div>
               <h3 className="program-card-name">Nursery / Pre-KG</h3>
               <span className="program-age-pill age-nursery">2.5 – 3.5 years</span>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.5, margin: '10px 0 16px' }}>
+              <p className="program-card-desc">
                 Our nursery programme introduces early language, counting, colours, shapes and creative expression through hands-on activities. Children practise listening, participating and doing small tasks with growing independence.
               </p>
               <Link
@@ -667,7 +668,7 @@ export default function HomePage() {
               </div>
               <h3 className="program-card-name">Junior KG</h3>
               <span className="program-age-pill age-jrkg">3.5 – 4.5 years</span>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.5, margin: '10px 0 16px' }}>
+              <p className="program-card-desc">
                 Junior KG builds on early learning with phonics, number activities, storytelling and practical tasks. Children develop communication, coordination and confidence as they take part in classroom activities.
               </p>
               <Link
@@ -686,7 +687,7 @@ export default function HomePage() {
               </div>
               <h3 className="program-card-name">Senior KG</h3>
               <span className="program-age-pill age-srkg">4.5 – 5.5 years</span>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.5, margin: '10px 0 16px' }}>
+              <p className="program-card-desc">
                 Senior KG helps children prepare for their next stage of schooling. Activities support early reading, writing readiness, number understanding and the everyday skills needed to participate in a classroom.
               </p>
               <Link
@@ -705,7 +706,7 @@ export default function HomePage() {
               </div>
               <h3 className="program-card-name">Daycare</h3>
               <span className="program-age-pill age-daycare">1 – 8 years</span>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.5, margin: '10px 0 16px' }}>
+              <p className="program-card-desc">
                 Families looking for daycare in Kithaganur can contact Appy Kidz to discuss childcare availability, age eligibility and daily arrangements. Speak with our team about your preferred schedule and how daycare can fit your child's routine.
               </p>
               <Link
@@ -742,115 +743,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. LEARNING THROUGH PLAY, STORIES AND DISCOVERY (Section 3 Copy & Events Gallery) */}
-      <section className="events-section" id="gallery">
+      {/* 5. VISIT OUR PRESCHOOL IN ADURU, KITHAGANUR (Section 3 Copy & Map) */}
+      <section className="visit-section">
         <div className="container">
-          <div className="section-header-center">
-            <span className="section-tag">Engaging Experiences</span>
-            <h2 className="section-title-large">Learning Through Play, Stories and Discovery</h2>
-            <p className="section-subtitle-text">
-              Learning becomes meaningful when children take part. At Appy Kidz, early learning includes storytelling, rhymes, art, Montessori activities and practical exploration.
-            </p>
-            <p className="desktop-only-text" style={{ color: '#64748B', fontSize: '0.96rem', maxWidth: '780px', margin: '8px auto 0', lineHeight: 1.6 }}>
-              These experiences give children opportunities to build vocabulary, practise coordination, notice patterns, express ideas and work alongside others. Our approach encourages curiosity while helping children become familiar with simple routines and classroom responsibilities.
-            </p>
-          </div>
-
-          {/* Desktop 3-Column Grid */}
-          <div className="events-desktop-grid">
-            {events.map((ev, idx) => (
-              <div
-                key={idx}
-                className="event-card"
-                onClick={() => setLightboxImg(ev.img)}
-                title="Hover for details • Click to expand"
-              >
-                <div className="event-card-default-badge">
-                  <span className={`event-badge ${ev.badgeClass}`} style={{ marginBottom: 0 }}>
-                    {ev.category}
-                  </span>
-                </div>
-                <img src={ev.img} alt={ev.title} className="event-card-full-img" />
-                <div className="event-card-overlay">
-                  <span className={`event-badge ${ev.badgeClass}`}>{ev.category}</span>
-                  <h3 className="event-card-title">{ev.title}</h3>
-                  <p className="event-card-desc">{ev.desc}</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#FEF08A', fontWeight: 800, marginTop: '4px' }}>
-                    <span>Click to View Full Size</span>
-                    <ChevronRight size={16} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Mobile Auto-Carousel */}
-          <div className="events-mobile-carousel">
-            <div
-              className="carousel-slide-card"
-              onClick={() => setLightboxImg(events[activeEventIndex].img)}
-              title="Tap to expand"
-            >
-              <img
-                src={events[activeEventIndex].img}
-                alt={events[activeEventIndex].title}
-                className="event-card-full-img"
-              />
-            </div>
-            <div className="carousel-info-below">
-              <span className={`event-badge ${events[activeEventIndex].badgeClass}`}>
-                {events[activeEventIndex].category}
-              </span>
-              <h3 style={{ fontSize: '1.25rem', color: '#1E293B', margin: '6px 0' }}>
-                {events[activeEventIndex].title}
-              </h3>
-              <p style={{ fontSize: '0.88rem', color: '#64748B', lineHeight: 1.5 }}>
-                {events[activeEventIndex].desc}
-              </p>
-              <button
-                onClick={() => setLightboxImg(events[activeEventIndex].img)}
-                style={{ marginTop: '8px', fontSize: '0.82rem', fontWeight: 800, color: '#0284C7' }}
-              >
-                Tap to Expand Poster ↗
-              </button>
-            </div>
-            <div className="carousel-dots">
-              {events.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveEventIndex(i)}
-                  className={`carousel-dot ${activeEventIndex === i ? 'active' : ''}`}
-                  aria-label={`Go to slide ${i + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. VISIT OUR PRESCHOOL IN ADURU, KITHAGANUR (Section 3 Copy & Map) */}
-      <section className="visit-campus-section" style={{ padding: '60px 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 36px' }}>
-            <span className="section-tag" style={{ background: '#DCFCE7', color: '#166534' }}>
+          <div className="visit-header-box">
+            <span className="section-tag visit-tag">
               Campus Location &amp; Directions
             </span>
-            <h2 style={{ fontSize: '2.1rem', color: '#1E293B', margin: '10px 0 14px' }}>
+            <h2 className="visit-title">
               Visit Our Preschool in Aduru, Kithaganur
             </h2>
-            <p style={{ color: '#475569', fontSize: '1.02rem', lineHeight: 1.65, marginBottom: '12px' }}>
+            <p className="visit-desc">
               Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur. If you live in Kithaganur or are considering a preschool near TC Palya, Battarahalli or KR Puram, arrange a visit to see whether the location and programme suit your family.
             </p>
-            <p style={{ color: '#64748B', fontSize: '0.96rem', lineHeight: 1.6, marginBottom: '24px' }}>
+            <p className="visit-desc-sub desktop-only-text">
               A school visit gives you time to explore the classrooms, meet the team and ask about nursery admission, kindergarten programmes or daycare. Use the map below for directions to the Kithaganur campus.
             </p>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <div className="visit-actions">
               <a
                 href="https://maps.google.com/?q=Appy+Kidz+International+Pre+School+Kithaganur+Bangalore"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary-hero"
-                style={{ background: '#0284C7', borderColor: '#38BDF8' }}
+                className="btn-primary-hero btn-directions"
               >
                 <MapPin size={18} /> Get Directions
               </a>
@@ -861,7 +775,7 @@ export default function HomePage() {
           </div>
 
           {/* Embedded Google Map */}
-          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', border: '1px solid #E2E8F0', height: '360px', background: '#E2E8F0' }}>
+          <div className="visit-map-container">
             <iframe
               title="Appy Kidz Kithaganur Map Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6853606684784!2d77.7265882!3d13.044146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11d4d3faefb3%3A0xc3faeb8a3791a8ee!2sAppy%20Kidz%20International%20Pre%20School%20%26%20Day%20Care!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
@@ -876,17 +790,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. WHAT TO DISCUSS DURING YOUR SCHOOL VISIT (Section 3 Copy) */}
-      <section style={{ padding: '60px 0', background: '#FFFFFF' }}>
+      {/* 6. WHAT TO DISCUSS DURING YOUR SCHOOL VISIT (Section 3 Copy) */}
+      <section className="checklist-section">
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 30px' }}>
-            <span className="section-tag" style={{ background: '#FEF08A', color: '#854D0E' }}>
+          <div className="checklist-header-box">
+            <span className="section-tag checklist-tag">
               School Visit Checklist
             </span>
-            <h2 style={{ fontSize: '2rem', color: '#1E293B', margin: '8px 0 12px' }}>
+            <h2 className="checklist-title">
               What to Discuss During Your School Visit
             </h2>
-            <p style={{ color: '#64748B', fontSize: '0.98rem' }}>
+            <p className="checklist-desc">
               Here are the key points to explore with our academic team when you tour our Aduru, Kithaganur campus:
             </p>
           </div>
@@ -940,25 +854,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. PRESCHOOL ADMISSIONS IN KITHAGANUR (Section 3 Copy & Conversion Box) */}
-      <section style={{ padding: '50px 0', background: 'linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%)', borderTop: '1px solid #BBF7D0', borderBottom: '1px solid #BBF7D0' }}>
+      {/* 7. PRESCHOOL ADMISSIONS IN KITHAGANUR (Section 3 Copy & Conversion Box) */}
+      <section className="admissions-section">
         <div className="container">
-          <div style={{ maxWidth: '850px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ fontSize: '2.1rem', color: '#14532D', marginBottom: '14px' }}>
+          <div className="admissions-header-box">
+            <h2 className="admissions-title">
               Preschool Admissions in Kithaganur
             </h2>
-            <p style={{ color: '#166534', fontSize: '1.05rem', lineHeight: 1.65, marginBottom: '24px' }}>
+            <p className="admissions-desc">
               Start by sharing your child's age and the programme you are interested in. Our team will explain current availability and help you arrange a campus visit. After your visit, you can review programme details, fees and the admission process before deciding.
             </p>
             
-            <div style={{ background: '#FFFFFF', padding: '28px 24px', borderRadius: '16px', boxShadow: '0 8px 25px rgba(22, 101, 52, 0.1)', border: '1.5px solid #86EFAC' }}>
-              <h3 style={{ fontSize: '1.45rem', color: '#1E293B', marginBottom: '8px' }}>
+            <div className="admissions-card">
+              <h3 className="admissions-card-title">
                 Find the Right First Step for Your Child
               </h3>
-              <p style={{ color: '#475569', fontSize: '0.96rem', marginBottom: '20px' }}>
+              <p className="admissions-card-desc">
                 Speak with Appy Kidz Kithaganur about preschool, nursery or daycare. Call +91 70222 61013 or book a school visit.
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+              <div className="admissions-card-actions">
                 <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
                   <Calendar size={18} /> Book a School Visit
                 </button>

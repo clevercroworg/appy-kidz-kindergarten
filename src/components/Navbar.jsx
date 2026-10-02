@@ -103,7 +103,6 @@ export default function Navbar({ onOpenModal }) {
               <li><Link href="/preschool-in-kithaganur" className="nav-pill">Preschool</Link></li>
               <li><Link href="/nursery-school-in-kithaganur" className="nav-pill">Nursery</Link></li>
               <li><Link href="/daycare-in-kithaganur" className="nav-pill">Daycare</Link></li>
-              <li><Link href="/#gallery" className="nav-pill">Events</Link></li>
               <li><Link href="/contact" className="nav-pill">Contact</Link></li>
             </ul>
           </nav>
@@ -133,7 +132,6 @@ export default function Navbar({ onOpenModal }) {
               <Link href="/nursery-school-in-kithaganur" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Nursery / Pre-KG</Link>
               <Link href="/daycare-in-kithaganur" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Daycare Facility</Link>
               <Link href="/#proud-moments" onClick={() => setMobileMenuOpen(false)} style={{ color: '#fff', fontWeight: 'bold' }}>Awards & Recognition</Link>
-              <Link href="/#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: '#fff', fontWeight: 'bold' }}>Events & Activities</Link>
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)} style={{ color: '#fff', fontWeight: 'bold' }}>Contact & Directions</Link>
               <button
                 onClick={() => { onOpenModal(); setMobileMenuOpen(false); }}
