@@ -18,7 +18,7 @@ export default function Navbar({ onOpenModal }) {
               <Phone size={13} /> <span>+91 70222 61013</span>
             </a>
             <span className="topbar-item topbar-address desktop-only" title="Campus Location">
-              <MapPin size={13} /> <span>Phase 2, Aduru, Kithaganur, Bengaluru - 560049</span>
+              <MapPin size={13} /> <span>Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049</span>
             </span>
             <span className="topbar-item topbar-hours desktop-only" title="Enquiry & Office Hours">
               <Clock size={13} /> <span>Mon - Sat: 8:30 AM - 6:30 PM</span>
@@ -92,7 +92,7 @@ export default function Navbar({ onOpenModal }) {
             />
             <div className="brand-text">
               <span className="brand-title">APPY KIDZ</span>
-              <span className="brand-subtitle">KITHAGANUR, BENGALURU</span>
+              <span className="brand-subtitle">INTERNATIONAL PRE SCHOOL</span>
             </div>
           </Link>
 

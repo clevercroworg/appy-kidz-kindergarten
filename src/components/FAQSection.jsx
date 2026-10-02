@@ -9,7 +9,7 @@ export const allFaqs = [
   {
     id: 'where-located',
     q: 'Where is Appy Kidz in Kithaganur?',
-    a: 'Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur, Bengaluru, Karnataka 560049. Use the directions link on our Contact page to plan your visit.'
+    a: 'Our Bengaluru campus is located at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore, Karnataka 560049. Use the directions link on our Contact page to plan your visit.'
   },
   {
     id: 'programmes-available',

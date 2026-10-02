@@ -151,7 +151,7 @@ function initLightbox() {
     el.addEventListener('click', () => {
       const src = el.getAttribute('data-lightbox-src');
       const title = el.getAttribute('data-lightbox-title') || 'Appy Kidz Campus';
-      const desc = el.getAttribute('data-lightbox-desc') || 'Phase 2, Aduru, Kithaganur, Bengaluru';
+      const desc = el.getAttribute('data-lightbox-desc') || 'Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore';
       openLightbox(src, title, desc);
     });
   });

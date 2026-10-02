@@ -51,7 +51,7 @@ export default function PreschoolPage() {
                 Your child’s first classroom should make learning feel inviting. <strong>Appy Kidz International Pre School</strong> in Kithaganur introduces young children to early learning through play, conversation, stories and practical activities.
               </p>
               <p style={{ fontSize: '1.02rem', color: '#475569', lineHeight: 1.65, marginBottom: '28px' }}>
-                Our campus in Phase 2, Aduru offers <strong>Playgroup, Nursery, Junior KG and Senior KG</strong>. Speak with our team to understand the programme that suits your child’s age, readiness and previous learning experience.
+                Our campus at Building No 30, Aryan Springz, Phase 2, Kithaganur offers <strong>Playgroup, Nursery, Junior KG and Senior KG</strong>. Speak with our team to understand the programme that suits your child’s age, readiness and previous learning experience.
               </p>
               <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <button

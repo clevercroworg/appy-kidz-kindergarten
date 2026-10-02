@@ -2,13 +2,13 @@ export const metadata = {
   title: {
     absolute: 'Contact Appy Kidz Kithaganur | Visit & Admissions',
   },
-  description: 'Contact Appy Kidz in Phase 2, Aduru, Kithaganur, Bengaluru. Call +91 70222 61013 for preschool, nursery and daycare enquiries or school visits.',
+  description: 'Contact Appy Kidz at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore. Call +91 70222 61013 for preschool, nursery and daycare enquiries or school visits.',
   alternates: {
     canonical: 'https://appykidz.in/contact',
   },
   openGraph: {
     title: 'Contact Appy Kidz Kithaganur | Visit & Admissions',
-    description: 'Contact Appy Kidz in Phase 2, Aduru, Kithaganur, Bengaluru. Call +91 70222 61013 for preschool, nursery and daycare enquiries or school visits.',
+    description: 'Contact Appy Kidz at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore. Call +91 70222 61013 for preschool, nursery and daycare enquiries or school visits.',
     url: 'https://appykidz.in/contact',
   }
 };

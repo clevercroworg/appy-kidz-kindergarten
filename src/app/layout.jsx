@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
         paymentAccepted: 'Cash, UPI, Net Banking, Cheque',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Phase 2, Aduru, Kithaganur',
+          streetAddress: 'Building No 30, Aryan Springz, Phase 2, Kithaganur',
           addressLocality: 'Bengaluru',
           addressRegion: 'Karnataka',
           postalCode: '560049',
@@ -164,7 +164,7 @@ export default function RootLayout({ children }) {
             name: 'Where is Appy Kidz in Kithaganur?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur, Bengaluru, Karnataka 560049. Use the directions link on our Contact page to plan your visit.'
+              text: 'Our Bengaluru campus is located at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore, Karnataka 560049. Use the directions link on our Contact page to plan your visit.'
             }
           },
           {

@@ -59,16 +59,9 @@ export default function AdmissionModal({ isOpen, onClose, initialProgram = 'Pre 
       setIsSubmitting(false);
     }
 
-    // 2. Open WhatsApp for instant two-way communication
-    const msg = `Hello Appy Kidz Kithaganur! I would like to book a school visit / admission enquiry.%0A%0A*Parent Name:* ${encodeURIComponent(formData.parentName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'Not provided')}%0A*Child Age:* ${encodeURIComponent(formData.childAge || 'Not specified')}%0A*Programme:* ${encodeURIComponent(formData.program)}%0A*Preferred Visit Time:* ${encodeURIComponent(formData.preferredTime)}%0A*Notes:* ${encodeURIComponent(formData.message || 'School visit enquiry')}%0A*Campus:* Phase 2, Aduru, Kithaganur, Bengaluru - 560049`;
-    window.open(`https://wa.me/917022261013?text=${msg}`, '_blank');
-
-    setFormSubmitted(true);
-    setTimeout(() => {
-      onClose();
-      setFormSubmitted(false);
-      setUserCaptcha('');
-    }, 2500);
+    // 2. Redirect to dedicated Thank You confirmation page
+    onClose();
+    window.location.href = '/thank-you';
   };
 
   if (!isOpen) return null;
@@ -87,7 +80,7 @@ export default function AdmissionModal({ isOpen, onClose, initialProgram = 'Pre 
             <div>
               <h3 id="modalTitle" className="admission-modal-title">Book a School Visit</h3>
               <p style={{ fontSize: '0.8rem', color: '#64748B', margin: 0 }}>
-                Appy Kidz Kithaganur &bull; Phase 2, Aduru
+                Appy Kidz International Pre School &bull; Building No 30, Aryan Springz, Phase 2, Kithaganur
               </p>
             </div>
           </div>

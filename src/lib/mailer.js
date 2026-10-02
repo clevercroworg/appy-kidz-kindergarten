@@ -14,7 +14,7 @@ export function getTransporter() {
     return null;
   }
 
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     host,
     port,
     secure,
@@ -74,7 +74,7 @@ export function generateNotificationHtml(data) {
                       Appy Kidz International Pre School
                     </h1>
                     <p style="margin: 4px 0 0; color: #DCFCE7; font-size: 13px;">
-                      Campus: Phase 2, Aduru, Kithaganur, Bengaluru - 560049
+                      Campus: Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049
                     </p>
                   </td>
                 </tr>
@@ -195,7 +195,7 @@ export function generateNotificationHtml(data) {
                 Automated enquiry notification from <strong>Appy Kidz International Pre School Website</strong>.
               </p>
               <p style="margin: 4px 0 0; font-size: 11px; color: #94A3B8;">
-                Phase 2, Aduru, Kithaganur, Bengaluru &bull; Phone: +91 70222 61013
+                Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049 &bull; Phone: +91 70222 61013
               </p>
             </td>
           </tr>
@@ -210,7 +210,125 @@ export function generateNotificationHtml(data) {
 }
 
 /**
- * Sends the enquiry notification email
+ * Generates an executive, branded HTML thank you / acknowledgement email for the parent
+ */
+export function generateParentAcknowledgementHtml(data) {
+  const {
+    parentName,
+    program = 'Preschool & Daycare',
+    childAge = 'Not specified',
+    preferredTime = 'Flexible',
+  } = data;
+
+  return `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Enquiring - Appy Kidz International Pre School</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1E293B;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #F8FAFC; padding: 30px 15px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #E2E8F0;">
+          
+          <!-- Header Banner -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #559E18 0%, #3F7511 100%); padding: 28px 30px; text-align: left;">
+              <span style="display: inline-block; background: rgba(255,255,255,0.2); color: #FEF08A; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 9999px; margin-bottom: 8px;">
+                Admissions 2026-27
+              </span>
+              <h1 style="margin: 0; color: #FFFFFF; font-size: 22px; font-weight: 800; letter-spacing: -0.5px;">
+                Appy Kidz International Pre School
+              </h1>
+              <p style="margin: 4px 0 0; color: #DCFCE7; font-size: 13px;">
+                Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049
+              </p>
+            </td>
+          </tr>
+
+          <!-- Welcome Body -->
+          <tr>
+            <td style="padding: 28px 30px 15px;">
+              <h2 style="font-size: 18px; color: #1E293B; margin: 0 0 12px; font-weight: 700;">
+                Dear ${parentName},
+              </h2>
+              <p style="font-size: 14px; line-height: 1.65; color: #334155; margin: 0 0 16px;">
+                Thank you for reaching out to <strong>Appy Kidz International Pre School &amp; Day Care</strong>! We are delighted to receive your enquiry for our Kithaganur campus.
+              </p>
+              
+              <div style="background-color: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 10px; padding: 16px 20px; margin-bottom: 20px;">
+                <h3 style="margin: 0 0 10px; font-size: 14px; color: #15803D; font-weight: 800;">
+                  Your Enquiry Details:
+                </h3>
+                <p style="margin: 4px 0; font-size: 13px; color: #374151;">
+                  &bull; <strong>Programme:</strong> ${program}
+                </p>
+                <p style="margin: 4px 0; font-size: 13px; color: #374151;">
+                  &bull; <strong>Child's Age:</strong> ${childAge}
+                </p>
+                <p style="margin: 4px 0; font-size: 13px; color: #374151;">
+                  &bull; <strong>Preferred Visit Window:</strong> ${preferredTime}
+                </p>
+              </div>
+
+              <h3 style="font-size: 15px; color: #1E293B; margin: 0 0 10px; font-weight: 700;">
+                What to Expect Next:
+              </h3>
+              <p style="font-size: 14px; line-height: 1.65; color: #334155; margin: 0 0 20px;">
+                Our admissions team will call you shortly to confirm your campus visit date and time, show you our child-proofed facilities, and discuss our Montessori curriculum and fees.
+              </p>
+
+              <div style="background-color: #F8FAFC; border-radius: 10px; padding: 18px 20px; border: 1px solid #E2E8F0; margin-bottom: 24px;">
+                <h4 style="margin: 0 0 8px; font-size: 13px; color: #0F172A; text-transform: uppercase; letter-spacing: 0.5px;">
+                  Campus Address &amp; Contact:
+                </h4>
+                <p style="margin: 3px 0; font-size: 13px; color: #475569;">
+                  📍 <strong>Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049</strong>
+                </p>
+                <p style="margin: 3px 0; font-size: 13px; color: #475569;">
+                  📞 Phone: <a href="tel:+917022261013" style="color: #0284C7; text-decoration: none; font-weight: 700;">+91 70222 61013</a>
+                </p>
+                <p style="margin: 3px 0; font-size: 13px; color: #475569;">
+                  ⏰ Campus Hours: Monday – Saturday: 8:30 AM – 6:30 PM
+                </p>
+              </div>
+
+              <div style="text-align: center; margin-bottom: 10px;">
+                <a href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20have%20submitted%20an%20admission%20enquiry%20and%20would%20like%20to%20connect." 
+                   style="display: inline-block; background-color: #25D366; color: #FFFFFF; font-weight: 700; font-size: 14px; text-decoration: none; padding: 12px 24px; border-radius: 9999px;">
+                  💬 Chat with Admissions on WhatsApp
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #F1F5F9; padding: 16px 30px; text-align: center; border-top: 1px solid #E2E8F0;">
+              <p style="margin: 0; font-size: 12px; color: #64748B;">
+                Warm Regards,<br>
+                <strong>Admissions Desk &bull; Appy Kidz International Pre School</strong>
+              </p>
+              <p style="margin: 6px 0 0; font-size: 11px; color: #94A3B8;">
+                Bengaluru Campus: Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049 &bull; +91 70222 61013
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  `.trim();
+}
+
+/**
+ * Sends the enquiry notification email to admin AND acknowledgement to parent
  */
 export async function sendEnquiryEmail(data) {
   const transporter = getTransporter();
@@ -244,8 +362,8 @@ export async function sendEnquiryEmail(data) {
 
   const html = generateNotificationHtml(data);
   const text = `
-NEW ADMISSION ENQUIRY - APPY KIDZ KITHAGANUR
----------------------------------------------
+NEW ADMISSION ENQUIRY - APPY KIDZ INTERNATIONAL PRE SCHOOL
+-----------------------------------------------------------
 Parent Name: ${data.parentName}
 Phone: ${data.phone}
 Email: ${data.email || 'Not provided'}
@@ -255,11 +373,12 @@ Preferred Visit Time: ${data.preferredTime || 'Flexible'}
 Message: ${data.message || 'None'}
 Source: ${data.source || 'Website'}
 Date: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
----------------------------------------------
-Campus: Phase 2, Aduru, Kithaganur, Bengaluru - 560049
+-----------------------------------------------------------
+Campus: Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049
 Phone: +91 70222 61013
   `.trim();
 
+  // 1. Send notification to school admissions email (appykidzbangalore@gmail.com)
   const info = await transporter.sendMail({
     from,
     to,
@@ -268,6 +387,21 @@ Phone: +91 70222 61013
     text,
     html,
   });
+
+  // 2. If parent provided an email, send them a confirmation / thank you email
+  if (data.email && data.email.includes('@')) {
+    try {
+      const parentHtml = generateParentAcknowledgementHtml(data);
+      await transporter.sendMail({
+        from,
+        to: data.email.trim(),
+        subject: `Thank You for Your Enquiry — Appy Kidz International Pre School`,
+        html: parentHtml,
+      });
+    } catch (parentEmailErr) {
+      console.error('Error sending parent acknowledgement email:', parentEmailErr);
+    }
+  }
 
   return {
     success: true,

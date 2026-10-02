@@ -38,7 +38,7 @@ export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [isBannerPaused, setIsBannerPaused] = useState(false);
 
-  // Testimonials Showcase State (10 Authentic Reviews)
+  // Testimonials Showcase State (11 Authentic Google Reviews)
   const [activeTestiIndex, setActiveTestiIndex] = useState(0);
   const [isTestiPaused, setIsTestiPaused] = useState(false);
 
@@ -248,84 +248,92 @@ export default function HomePage() {
 
   const parentTestimonials = [
     {
-      id: 'sai-thanvikha',
-      studentName: 'Sai Thanvikha R.',
-      grade: 'Sr. KG',
-      parentRole: 'Parent of Sai Thanvikha',
-      image: '/assets/testimonials/Sai-Thanvikha_Sr.KG_.jpg',
-      quote: "One of the best preschools! At just 5 years old, my daughter is reading full sentences fluently. The teachers make mathematical and practical concepts easy to understand. Highly recommended!"
+      id: 'ammu-ammuchinnu',
+      studentName: 'Ammu Ammuchinnu',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review • 5 months ago',
+      image: '/assets/testimonials/ammu-ammuchinnu.png',
+      quote: "The school provides a safe, caring and engaging environment for children. Teachers are supportive and activities make learning fun and interactive. Overall, it is a great place for a child's growth and development. 😍🥰🥰🥰🥰😍"
     },
     {
-      id: 'ashwin-i',
-      studentName: 'Ashwin I.',
-      grade: 'Graduate',
-      parentRole: 'Father of Ashwin I.',
-      image: '/assets/testimonials/ASHWIN-I.jpg',
-      quote: "Appy Kidz has been vital in moulding my boy to be his best. They don’t just focus on academics, but nurture extra-curriculars, stage confidence, and strong discipline."
+      id: 'talitha-mungara',
+      studentName: 'Talitha Mungara. Y',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review (2 reviews) • 5 months ago',
+      image: '/assets/testimonials/talitha-mungara.png',
+      quote: "This is a very nice kindergarten School the teachers are kind and taking care of the children my children enjoy going to school everyday and learning new things."
     },
     {
-      id: 'shananthika',
-      studentName: 'Shananthika K. S.',
-      grade: 'Since 2015',
-      parentRole: 'Mother of 3 Enrolled Siblings',
-      image: '/assets/testimonials/SHANANTHIKA-K-S.jpg',
-      quote: "My two daughters studied here and now my son is continuing — our bonding dates back to 2015! A wonderful preschool giving equal importance to joyful studies and activities."
+      id: 'harshitha-savanth',
+      studentName: 'Harshitha.R Savanth',
+      grade: 'Google Verified',
+      parentRole: 'Parent of 2.9 yr old (5 reviews) • 9 months ago',
+      image: '/assets/testimonials/harshitha-savanth.png',
+      quote: "We are very happy with Appy Kids School. Our son is 2.9 years old, and the care, love, and attention he receives here are truly wonderful. The teachers are warm, patient, and nurturing, making the children feel safe and comfortable."
     },
     {
-      id: 'g-kathiran',
-      studentName: 'G. Kathiran',
-      grade: 'Kindergarten',
-      parentRole: 'Parent of Kathiran (2+ Yrs)',
-      image: '/assets/testimonials/G-Kathiran.png',
-      quote: "Been associated with Appy Kidz for 2+ years and the journey has been fantastic. The faculty and staff treat every child with genuine patience, warmth, and individualized care."
+      id: 'rajeshwari-jadhav',
+      studentName: 'Rajeshwari Jadhav',
+      grade: 'Google Verified',
+      parentRole: 'Toddler Parent (7 reviews) • 3 months ago',
+      image: '/assets/testimonials/rajeshwari-jadhav.png',
+      quote: "Very good school for littele angels, I feel really safe of the environment this school is having , I feel happy that well knowlegeble teachers are there in the school who really take care of toddlers and teachings something new."
     },
     {
-      id: 'nushaan',
-      studentName: 'Nushaan Konduru',
-      grade: 'Pre-KG',
-      parentRole: 'Parents of Nushaan',
-      image: '/assets/testimonials/NUSHAAN-KONDURU.jpg',
-      quote: "When Nushaan joined at age 3, he could barely speak words. With the patient guidance and speech activities from his teachers, he made a remarkable breakthrough and now speaks joyfully!"
+      id: 'inform-priyanka',
+      studentName: 'Inform Priyanka',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review • 1 year ago',
+      image: '/assets/testimonials/inform-priyanka.png',
+      quote: "Best school and very good management they are very supportive even fees is very competitive. Syllabus is also very energetic and impressive. You must visit it☺️"
     },
     {
-      id: 'd-shaanvi',
-      studentName: 'D. Shaanvi',
-      grade: 'Jr. KG',
-      parentRole: 'Parent of D. Shaanvi',
-      image: '/assets/testimonials/D.-Shaanvi.jpg',
-      quote: "Appy Kidz is an excellent school for KG students. Their teaching methodology is superb, and the teachers are wonderfully friendly and attentive to each child's learning pace."
+      id: 'lalitha-lalitha',
+      studentName: 'Lalitha Lalitha',
+      grade: 'Google Verified',
+      parentRole: 'Preschool Parent (2 reviews) • Recent',
+      image: '/assets/testimonials/lalitha-lalitha.png',
+      quote: "I recently joined Appy Kidz International Preschool - Kithaganur, and I am extremely happy with my experience. The school provides a warm, safe, and welcoming environment where children feel comfortable, confident, and excited to learn."
     },
     {
-      id: 'rohitvel',
-      studentName: 'Rohitvel',
-      grade: 'Jr. KG',
-      parentRole: 'Mother of Rohitvel',
-      image: '/assets/testimonials/ROHITVEL.jpg',
-      quote: "My son Rohit joined here and we noticed wonderful positive changes immediately. The staff are extremely good and organize great celebrations that children love!"
+      id: 'madhu-manoj',
+      studentName: 'Madhu Manoj',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review (9 reviews) • Recent',
+      image: '/assets/testimonials/madhu-manoj.png',
+      quote: "Best school and very good management they are very supportive Syllabus is also very energetic and impressive. I can see day to day growth from him ,teachers and staff and entire team is friendly very caring thank u so much ☺️"
     },
     {
-      id: 'b-rithvik',
-      studentName: 'B. Rithvik',
-      grade: 'Playgroup',
-      parentRole: 'Parents of B. Rithvik',
-      image: '/assets/testimonials/B-RITHVIK.jpg',
-      quote: "Excellent quality education, very disciplined, and truly focused on the child's future. Super staff — deeply caring, professional, and well organized!"
+      id: 'manoj-kumar',
+      studentName: 'Manoj kumar',
+      grade: 'Google Verified',
+      parentRole: 'Local Guide (13 reviews • 2 photos) • Recent',
+      image: '/assets/testimonials/manoj-kumar.png',
+      quote: "We are very happy with Appy Kids School the care, love, and attention they have given are truly wonderful. The teachers are warm, patient, and nurturing, making the children feel safe and comfortable. The activities are fun, engaging, and creative."
     },
     {
-      id: 'nr-kailash',
-      studentName: 'N. R. Kailash',
-      grade: 'Kindergarten',
-      parentRole: 'Father of N. R. Kailash',
-      image: '/assets/testimonials/N.R.KAILASH-scaled.jpg',
-      quote: "I am very happy that I chose Appy Kidz for my son. The playful, creative activities make children excited to attend school and learn effortlessly every day."
+      id: 'marian-lazaro',
+      studentName: 'Marian Lazaro',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review (2 reviews) • Recent',
+      image: '/assets/testimonials/marian-lazaro.png',
+      quote: "Appy Kidz International Preschool is a wonderful school with a happy, safe, and nurturing environment. The teachers are caring, and the school conducts many fun and engaging activities that help children learn and grow. The management is friendly and supportive. I am very happy with the holistic development and would highly recommend Appy Kidz to other parents."
     },
     {
-      id: 'tharun-karthik',
-      studentName: 'Tharun Karthik Kadari',
-      grade: 'Sr. KG',
-      parentRole: 'Parents of Tharun Karthik',
-      image: '/assets/testimonials/KADARI-THARUN-KARTHIK.jpg',
-      quote: "We are fortunate to have our child at Appy Kidz. The teachers make every session engaging and interactive. The dedication put in by the team is truly exceptional!"
+      id: 'deepa-deepa',
+      studentName: 'deepa deepa',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review (2 reviews) • 2 months ago',
+      image: '/assets/testimonials/deepa-deepa.png',
+      quote: "The teachers take a personal interest in every student and make learning fun. And also we see a big improvement in our child’s speaking skills and discipline. Thank you to the principal and teachers for creating such a warm and happy learning space."
+    },
+    {
+      id: 'ranjitha-k',
+      studentName: 'Ranjitha k',
+      grade: 'Google Verified',
+      parentRole: 'Parent Review (3 reviews) • 3 months ago',
+      image: '/assets/testimonials/ranjitha-k.png',
+      quote: "I believe Appy Kids is a wonderful place for young children to build a solid foundation. My son is learning many valuable things there which have helped him develop strong observation, listening, and action skills. Thank you so much for all the activities you offer, please continue to do so."
     }
   ];
 
@@ -440,7 +448,7 @@ export default function HomePage() {
               Little steps. Happy discoveries. A confident start.
             </p>
             <p className="hero-h1-desc">
-              At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
+              At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049.
             </p>
             <div className="hero-h1-actions">
               <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
@@ -542,8 +550,8 @@ export default function HomePage() {
                   onError={(e) => { e.target.src = '/assets/classroom-green-desks.jpg'; }}
                 />
                 <div className="about-floating-card">
-                  <span className="about-floating-number">Phase 2, Aduru</span>
-                  <span className="about-floating-label">Kithaganur, Bengaluru</span>
+                  <span className="about-floating-number">Aryan Springz, Phase 2</span>
+                  <span className="about-floating-label">Kithaganur, Bangalore</span>
                 </div>
                 <div className="about-floating-mascot">
                   <img
@@ -702,7 +710,7 @@ export default function HomePage() {
                 Visit Our Preschool in Aduru, Kithaganur
               </h2>
               <p className="visit-desc">
-                Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur. If you live in Kithaganur or are considering a preschool near TC Palya, Battarahalli or KR Puram, arrange a visit to see whether the location and programme suit your family.
+                Our Bengaluru campus is located at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049. If you live in Kithaganur or are considering a preschool near TC Palya, Battarahalli or KR Puram, arrange a visit to see whether the location and programme suit your family.
               </p>
               <p className="visit-desc-sub">
                 A school visit gives you time to explore the classrooms, meet the team and ask about nursery admission, kindergarten programmes or daycare.
@@ -716,7 +724,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <strong>Campus Address</strong>
-                    <span>Phase 2, Aduru, Kithaganur, Bengaluru 560049</span>
+                    <span>Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049</span>
                   </div>
                 </div>
                 <div className="visit-fact-item">
@@ -984,13 +992,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11. WHAT OUR HAPPY PARENTS SAY (10 Authentic Reviews) */}
+      {/* 11. WHAT OUR HAPPY PARENTS SAY (11 Authentic Google Reviews) */}
       <section className="testimonials-section" id="testimonials">
         <div className="container">
           <div className="testi-header-box">
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', borderRadius: '9999px', background: '#FEF3C7', color: '#92400E', fontSize: '0.82rem', fontWeight: 700, marginBottom: '12px', border: '1px solid #FDE68A' }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+              </svg>
+              <span>5.0 ★ Google Verified Reviews</span>
+            </div>
             <h2 className="testimonials-title">What Our Happy Parents Say</h2>
             <p className="testimonials-subtitle">
-              Authentic stories and reviews from parents across our early learning community.
+              Authentic stories and 5-star reviews from parents at Appy Kidz Kithaganur on Google.
             </p>
           </div>
 
@@ -1068,20 +1085,52 @@ export default function HomePage() {
           </div>
 
           <div className="testi-avatars-row-wrap">
-            <span className="testi-avatars-label">Tap to view:</span>
+            <span className="testi-avatars-label">Tap parent review:</span>
             <div className="testi-avatars-scroller" ref={avatarScrollerRef}>
               {parentTestimonials.map((item, idx) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTestiIndex(idx)}
                   className={`testi-avatar-chip ${idx === activeTestiIndex ? 'active' : ''}`}
-                  title={`${item.studentName} (${item.grade})`}
+                  title={`${item.studentName} (${item.parentRole})`}
                 >
                   <img src={item.image} alt={item.studentName} className="testi-chip-img" />
                   <span className="testi-chip-label">{item.studentName.split(' ')[0]}</span>
                 </button>
               ))}
             </div>
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '22px' }}>
+            <a
+              href="https://www.google.com/search?q=appy+kidz+kithaganur#lrd=0x3bae11644478a7bd:0x962c06cb423c4327,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '10px 22px',
+                borderRadius: '9999px',
+                backgroundColor: '#FFFFFF',
+                color: '#1E293B',
+                fontSize: '0.88rem',
+                fontWeight: 700,
+                border: '1.5px solid #CBD5E1',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+              </svg>
+              <span>Read All Reviews on Google Maps</span>
+              <ExternalLink size={15} color="#F59E0B" />
+            </a>
           </div>
         </div>
       </section>

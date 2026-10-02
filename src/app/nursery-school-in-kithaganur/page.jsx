@@ -40,7 +40,7 @@ export default function NurseryPage() {
                 Nursery is a time for children to explore, communicate and become familiar with learning alongside others. At <strong>Appy Kidz in Kithaganur</strong>, our Nursery / Pre-KG programme introduces early learning through stories, rhymes, creative activities and practical discovery.
               </p>
               <p style={{ fontSize: '1.02rem', color: '#475569', lineHeight: 1.65, marginBottom: '28px' }}>
-                Visit our campus in Phase 2, Aduru to learn about the programme and discuss whether it suits your child’s age and readiness.
+                Visit our campus at Building No 30, Aryan Springz, Phase 2, Kithaganur to learn about the programme and discuss whether it suits your child’s age and readiness.
               </p>
               <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <button

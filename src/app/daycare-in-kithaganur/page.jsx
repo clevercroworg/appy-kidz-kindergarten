@@ -37,7 +37,7 @@ export default function DaycarePage() {
                 Daycare in Kithaganur — Discuss Your Childcare Needs
               </h1>
               <p style={{ fontSize: '1.08rem', color: '#334155', lineHeight: 1.7, marginBottom: '16px' }}>
-                Finding daycare is about choosing a daily arrangement that works for your child and your family. <strong>Appy Kidz International Pre School & Day Care</strong> in Phase 2, Aduru, Kithaganur welcomes enquiries from parents looking for local childcare.
+                Finding daycare is about choosing a daily arrangement that works for your child and your family. <strong>Appy Kidz International Pre School &amp; Day Care</strong> at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore welcomes enquiries from parents looking for local childcare.
               </p>
               <p style={{ fontSize: '1.02rem', color: '#475569', lineHeight: 1.65, marginBottom: '28px' }}>
                 Tell us your child’s age, the days you need care and your preferred drop-off and collection times. Our team can explain current availability and the arrangements offered at the campus.
@@ -96,10 +96,10 @@ export default function DaycarePage() {
             </div>
 
             <div style={{ background: '#F8FAFC', padding: '24px', borderRadius: '14px', border: '1px solid #E2E8F0' }}>
-              <Coffee size={28} color="#D97706" style={{ marginBottom: '12px' }} />
-              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Nutritious Meal Support</h3>
+              <Heart size={28} color="#E11D48" style={{ marginBottom: '12px' }} />
+              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Engaging Play & Care</h3>
               <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6 }}>
-                Supportive snack and meal routines ensuring children receive wholesome sustenance and hydration throughout the day.
+                Nurturing caregivers facilitating indoor activities, storytelling, creative expression and guided peer play in a warm environment.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function DaycarePage() {
           </div>
 
           <p style={{ fontSize: '1.02rem', color: '#475569', lineHeight: 1.7, background: '#F1F5F9', padding: '20px 24px', borderRadius: '12px' }}>
-            During your visit, discuss your child’s usual routine and ask about rest, food arrangements, supervision, hygiene, collection procedures and communication with parents. Our team will explain the arrangements available so you can decide whether they suit your child.
+            During your visit, discuss your child’s usual routine and ask about rest routines, supervision, hygiene, collection procedures and daily updates with parents. Our team will explain the arrangements available so you can decide whether they suit your child.
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function DaycarePage() {
             <div style={{ background: '#FFFFFF', padding: '28px', borderRadius: '16px', border: '1px solid #E2E8F0', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
               <h3 style={{ fontSize: '1.2rem', color: '#1E293B', marginBottom: '14px' }}>Daycare Near Aduru and Kithaganur</h3>
               <p style={{ fontSize: '0.94rem', color: '#475569', lineHeight: 1.6, marginBottom: '16px' }}>
-                Our campus is in Phase 2, Aduru, Kithaganur, Bengaluru. Families travelling from nearby neighbourhoods can use our map to plan their daily journey and arrange a visit before choosing a childcare schedule.
+                Our campus is at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore. Families travelling from nearby neighbourhoods can use our map to plan their daily journey and arrange a visit before choosing a childcare schedule.
               </p>
               <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#559E18', fontWeight: 800, textDecoration: 'none' }}>
                 <MapPin size={16} /> View Kithaganur Campus Map & Directions &rarr;

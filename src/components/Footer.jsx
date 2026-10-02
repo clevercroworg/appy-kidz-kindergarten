@@ -15,7 +15,7 @@ export default function Footer({ onOpenModal }) {
             <span className="section-tag" style={{ background: 'rgba(255,255,255,0.2)', color: '#FFFFFF', marginBottom: '8px' }}>
               Bengaluru Campus
             </span>
-            <h2 className="locations-title">Appy Kidz Kithaganur</h2>
+            <h2 className="locations-title">Appy Kidz International Pre School</h2>
           </div>
           <img
             src="/assets/official/logo-appy.png"
@@ -32,11 +32,11 @@ export default function Footer({ onOpenModal }) {
             <span className="featured-pill" style={{ background: '#16A34A', color: '#FFFFFF', padding: '4px 10px', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 800 }}>
               📍 PRIMARY BENGALURU CAMPUS
             </span>
-            <h3 style={{ fontSize: '1.4rem', margin: '12px 0 6px', color: '#1E293B' }}>Kithaganur (Aduru)</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '12px 0 6px', color: '#1E293B' }}>Kithaganur (Bengaluru)</h3>
             <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6, marginBottom: '14px' }}>
-              Phase 2, Aduru, Kithaganur,<br />
-              Bengaluru, Karnataka - 560049<br />
-              <em style={{ fontSize: '0.85rem', color: '#64748B' }}>(Serving Kithaganur, Aduru & nearby TC Palya, Battarahalli & KR Puram)</em>
+              Building No 30, Aryan Springz, Phase 2, Kithaganur,<br />
+              Bangalore, Karnataka - 560049<br />
+              <em style={{ fontSize: '0.85rem', color: '#64748B' }}>(Serving Kithaganur, Aduru &amp; nearby TC Palya, Battarahalli &amp; KR Puram)</em>
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, color: '#1E293B', fontSize: '1.05rem', marginBottom: '16px' }}>
               <Phone size={18} color="#559E18" />

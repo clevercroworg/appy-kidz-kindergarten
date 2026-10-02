@@ -63,11 +63,8 @@ export default function ContactPage() {
       setIsSubmitting(false);
     }
 
-    // 2. Open WhatsApp for instant two-way chat
-    const msg = `Hello Appy Kidz Kithaganur! I am booking a campus visit via the website contact page.%0A%0A*Parent Name:* ${encodeURIComponent(formData.parentName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'N/A')}%0A*Child Age:* ${encodeURIComponent(formData.childAge || 'Not specified')}%0A*Programme:* ${encodeURIComponent(formData.program)}%0A*Preferred Window:* ${encodeURIComponent(formData.preferredTime)}%0A*Questions:* ${encodeURIComponent(formData.message || 'Campus tour enquiry')}%0A*Campus:* Phase 2, Aduru, Kithaganur, Bengaluru - 560049`;
-    window.open(`https://wa.me/917022261013?text=${msg}`, '_blank');
-
-    setSubmitted(true);
+    // 2. Redirect to dedicated Thank You confirmation page
+    window.location.href = '/thank-you';
   };
 
   return (
@@ -93,7 +90,7 @@ export default function ContactPage() {
             Visit Appy Kidz Kithaganur
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#334155', lineHeight: 1.7, marginBottom: '24px' }}>
-            Come and explore our preschool and daycare campus in Phase 2, Aduru, Kithaganur. Book a visit to meet our team, see the learning environment and discuss the right programme for your child.
+            Come and explore our preschool and daycare campus at Building No 30, Aryan Springz, Phase 2, Kithaganur, Bangalore - 560049. Book a visit to meet our team, see the learning environment and discuss the right programme for your child.
           </p>
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
@@ -141,8 +138,8 @@ export default function ContactPage() {
                   <div>
                     <strong style={{ display: 'block', color: '#1E293B', marginBottom: '4px' }}>Campus Address:</strong>
                     <address style={{ fontStyle: 'normal', color: '#475569', lineHeight: 1.6 }}>
-                      Phase 2, Aduru, Kithaganur,<br />
-                      Bengaluru, Karnataka &ndash; 560049<br />
+                      Building No 30, Aryan Springz, Phase 2, Kithaganur,<br />
+                      Bangalore, Karnataka &ndash; 560049<br />
                       <span style={{ fontSize: '0.85rem', color: '#64748B' }}>Conveniently accessible from TC Palya, Battarahalli, Aduru & KR Puram</span>
                     </address>
                   </div>
@@ -309,7 +306,7 @@ export default function ContactPage() {
                     <textarea
                       name="message"
                       rows={2}
-                      placeholder="e.g. inquiries about daily routine, food arrangements, or transport from Battarahalli"
+                      placeholder="e.g. inquiries about daily routine, daycare timings, or campus visits"
                       value={formData.message}
                       onChange={handleFormChange}
                       className="admission-textarea-styled"
