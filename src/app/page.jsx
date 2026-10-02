@@ -430,9 +430,8 @@ export default function HomePage() {
       <section className="hero-brief-box">
         <div className="container hero-brief-container">
           <div className="hero-brief-content">
-            <span className="section-tag hero-admissions-tag">
-              <span className="admissions-pulse-dot" />
-              Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
+            <span className="hero-admissions-badge">
+              Admissions Open 2026-27
             </span>
             <h1 className="hero-h1-heading">
               Preschool, Nursery &amp; Daycare in Kithaganur
@@ -440,7 +439,7 @@ export default function HomePage() {
             <p className="hero-h1-tagline">
               Little steps. Happy discoveries. A confident start.
             </p>
-            <p className="hero-h1-desc desktop-only-desc">
+            <p className="hero-h1-desc">
               At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
             </p>
             <div className="hero-h1-actions">
@@ -468,10 +467,10 @@ export default function HomePage() {
         <div className="container">
           <div className="about-compact-grid">
             <div className="about-compact-content">
-              <div className="about-compact-badge">
+              <span className="about-welcome-tag">
                 <Sparkles size={14} style={{ color: '#D97706' }} />
-                <span>Welcome to Appy Kidz Kithaganur</span>
-              </div>
+                <span>Welcome to Appy Kidz</span>
+              </span>
               <h2 className="about-compact-title">
                 A Happy Beginning at Appy Kidz Kithaganur
               </h2>
@@ -481,23 +480,23 @@ export default function HomePage() {
               <p className="about-compact-sub">
                 Appy Kidz brings early learning and childcare together at our Kithaganur campus. Our Montessori and play-way approach introduces children to language, numbers, movement and practical activities in an engaging way. Children have opportunities to explore, ask questions, practise new skills and build friendships.
               </p>
-              <p style={{ color: '#475569', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '20px' }}>
+              <p className="about-compact-sub">
                 Visit the campus, meet our team and find out which programme suits your child's age and stage of development.
               </p>
               
               <div className="about-compact-highlights">
                 <div className="about-highlight-pill">
                   <div className="about-pill-icon-box icon-box-trophy">
-                    <Star size={24} color="#D97706" />
+                    <Star size={22} color="#D97706" />
                   </div>
                   <div className="about-pill-text">
                     <strong>17+ Years</strong>
-                    <span>Network Educational Legacy</span>
+                    <span>Network Legacy</span>
                   </div>
                 </div>
                 <div className="about-highlight-pill">
                   <div className="about-pill-icon-box icon-box-brain">
-                    <Sparkles size={24} color="#DB2777" />
+                    <Sparkles size={22} color="#DB2777" />
                   </div>
                   <div className="about-pill-text">
                     <strong>Play-Way</strong>
@@ -506,20 +505,20 @@ export default function HomePage() {
                 </div>
                 <div className="about-highlight-pill">
                   <div className="about-pill-icon-box icon-box-safe">
-                    <CheckCircle2 size={24} color="#059669" />
+                    <CheckCircle2 size={22} color="#059669" />
                   </div>
                   <div className="about-pill-text">
                     <strong>Child Proofed</strong>
-                    <span>Campus Safety Protocols</span>
+                    <span>Campus Safety</span>
                   </div>
                 </div>
                 <div className="about-highlight-pill">
                   <div className="about-pill-icon-box icon-box-award">
-                    <GraduationCap size={24} color="#B45309" />
+                    <GraduationCap size={22} color="#B45309" />
                   </div>
                   <div className="about-pill-text">
                     <strong>Recognized</strong>
-                    <span>Indian School Awards Winner</span>
+                    <span>Award Winner</span>
                   </div>
                 </div>
               </div>
@@ -543,7 +542,7 @@ export default function HomePage() {
                   onError={(e) => { e.target.src = '/assets/classroom-green-desks.jpg'; }}
                 />
                 <div className="about-floating-card">
-                  <span className="about-floating-number">Aduru</span>
+                  <span className="about-floating-number">Phase 2, Aduru</span>
                   <span className="about-floating-label">Kithaganur, Bengaluru</span>
                 </div>
                 <div className="about-floating-mascot">
@@ -562,7 +561,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. PRESCHOOL AND DAYCARE PROGRAMMES (Section 3 Copy & Crawlable Routes) */}
+      {/* 3. PRESCHOOL AND DAYCARE PROGRAMMES (Section 3 Copy & Crawlable Routes) */}
       <section className="programs-section" id="programs">
         <div className="container">
           <div className="section-header-center">
@@ -579,7 +578,7 @@ export default function HomePage() {
               <h3 className="program-card-name">Playgroup</h3>
               <span className="program-age-pill age-playgroup">1.5 – 2.5 years</span>
               <p className="program-card-desc">
-                A gentle introduction to learning beyond home. Stories, songs, sensory exploration and guided play help children become familiar with a classroom routine and spending time with other children.
+                Gentle introduction through stories, sensory exploration, and guided classroom routines.
               </p>
               <button
                 onClick={() => setIsModalOpen(true)}
@@ -597,14 +596,14 @@ export default function HomePage() {
               <h3 className="program-card-name">Nursery / Pre-KG</h3>
               <span className="program-age-pill age-nursery">2.5 – 3.5 years</span>
               <p className="program-card-desc">
-                Our nursery programme introduces early language, counting, colours, shapes and creative expression through hands-on activities. Children practise listening, participating and doing small tasks with growing independence.
+                Early language, counting, colours, shapes, and creative expression through hands-on play.
               </p>
               <Link
                 href="/nursery-school-in-kithaganur"
                 className="program-link-btn"
                 style={{ textDecoration: 'none' }}
               >
-                Explore Nursery in Kithaganur <ChevronRight size={14} />
+                Explore Nursery <ChevronRight size={14} />
               </Link>
             </div>
 
@@ -616,14 +615,14 @@ export default function HomePage() {
               <h3 className="program-card-name">Junior KG</h3>
               <span className="program-age-pill age-jrkg">3.5 – 4.5 years</span>
               <p className="program-card-desc">
-                Junior KG builds on early learning with phonics, number activities, storytelling and practical tasks. Children develop communication, coordination and confidence as they take part in classroom activities.
+                Phonics, early numeracy, interactive storytelling, and classroom communication confidence.
               </p>
               <Link
                 href="/preschool-in-kithaganur"
                 className="program-link-btn"
                 style={{ textDecoration: 'none' }}
               >
-                Explore Our Preschool Programme <ChevronRight size={14} />
+                Explore Junior KG <ChevronRight size={14} />
               </Link>
             </div>
 
@@ -635,14 +634,14 @@ export default function HomePage() {
               <h3 className="program-card-name">Senior KG</h3>
               <span className="program-age-pill age-srkg">4.5 – 5.5 years</span>
               <p className="program-card-desc">
-                Senior KG helps children prepare for their next stage of schooling. Activities support early reading, writing readiness, number understanding and the everyday skills needed to participate in a classroom.
+                School readiness, early reading fluency, writing skills, and logical thinking foundation.
               </p>
               <Link
                 href="/preschool-in-kithaganur"
                 className="program-link-btn"
                 style={{ textDecoration: 'none' }}
               >
-                Explore Our Preschool Programme <ChevronRight size={14} />
+                Explore Senior KG <ChevronRight size={14} />
               </Link>
             </div>
 
@@ -654,14 +653,14 @@ export default function HomePage() {
               <h3 className="program-card-name">Daycare</h3>
               <span className="program-age-pill age-daycare">1 – 8 years</span>
               <p className="program-card-desc">
-                Families looking for daycare in Kithaganur can contact Appy Kidz to discuss childcare availability, age eligibility and daily arrangements. Speak with our team about your preferred schedule and how daycare can fit your child's routine.
+                Loving childcare with flexible routines, nutritious support, and complete child-proofed safety.
               </p>
               <Link
                 href="/daycare-in-kithaganur"
                 className="program-link-btn"
                 style={{ textDecoration: 'none' }}
               >
-                Explore Daycare in Kithaganur <ChevronRight size={14} />
+                Explore Daycare <ChevronRight size={14} />
               </Link>
             </div>
           </div>
@@ -690,59 +689,100 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. VISIT OUR PRESCHOOL IN ADURU, KITHAGANUR (Section 3 Copy & Map) */}
-      <section className="visit-section">
+      {/* 4. VISIT OUR PRESCHOOL IN ADURU, KITHAGANUR (Section 3 Copy & 2-Column Campus Showcase) */}
+      <section className="visit-section" id="visit">
         <div className="container">
-          <div className="visit-header-box">
-            <span className="section-tag visit-tag">
-              Campus Location &amp; Directions
-            </span>
-            <h2 className="visit-title">
-              Visit Our Preschool in Aduru, Kithaganur
-            </h2>
-            <p className="visit-desc">
-              Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur. If you live in Kithaganur or are considering a preschool near TC Palya, Battarahalli or KR Puram, arrange a visit to see whether the location and programme suit your family.
-            </p>
-            <p className="visit-desc-sub desktop-only-text">
-              A school visit gives you time to explore the classrooms, meet the team and ask about nursery admission, kindergarten programmes or daycare. Use the map below for directions to the Kithaganur campus.
-            </p>
-            <div className="visit-actions">
-              <a
-                href="https://maps.google.com/?q=Appy+Kidz+International+Pre+School+Kithaganur+Bangalore"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary-hero btn-directions"
-              >
-                <MapPin size={18} /> Get Directions
-              </a>
-              <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
-                <Calendar size={18} /> Book a School Visit
-              </button>
-            </div>
-          </div>
+          <div className="visit-grid">
+            {/* Left Column: Campus Details & Directions */}
+            <div className="visit-info-col">
+              <span className="section-tag visit-tag">
+                <MapPin size={14} /> Campus Location &amp; Directions
+              </span>
+              <h2 className="visit-title">
+                Visit Our Preschool in Aduru, Kithaganur
+              </h2>
+              <p className="visit-desc">
+                Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur. If you live in Kithaganur or are considering a preschool near TC Palya, Battarahalli or KR Puram, arrange a visit to see whether the location and programme suit your family.
+              </p>
+              <p className="visit-desc-sub">
+                A school visit gives you time to explore the classrooms, meet the team and ask about nursery admission, kindergarten programmes or daycare.
+              </p>
 
-          {/* Embedded Google Map */}
-          <div className="visit-map-container">
-            <iframe
-              title="Appy Kidz Kithaganur Map Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6853606684784!2d77.7265882!3d13.044146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11d4d3faefb3%3A0xc3faeb8a3791a8ee!2sAppy%20Kidz%20International%20Pre%20School%20%26%20Day%20Care!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+              {/* Quick Info Badges */}
+              <div className="visit-quick-facts">
+                <div className="visit-fact-item">
+                  <div className="visit-fact-icon">
+                    <MapPin size={18} color="#0284C7" />
+                  </div>
+                  <div>
+                    <strong>Campus Address</strong>
+                    <span>Phase 2, Aduru, Kithaganur, Bengaluru 560049</span>
+                  </div>
+                </div>
+                <div className="visit-fact-item">
+                  <div className="visit-fact-icon">
+                    <Clock size={18} color="#059669" />
+                  </div>
+                  <div>
+                    <strong>Campus Hours</strong>
+                    <span>Monday – Saturday: 8:30 AM – 6:30 PM</span>
+                  </div>
+                </div>
+                <div className="visit-fact-item">
+                  <div className="visit-fact-icon">
+                    <Phone size={18} color="#D97706" />
+                  </div>
+                  <div>
+                    <strong>Admissions Desk</strong>
+                    <span>+91 70222 61013</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="visit-actions">
+                <a
+                  href="https://maps.google.com/?q=Appy+Kidz+International+Pre+School+Kithaganur+Bangalore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-directions-link"
+                >
+                  <MapPin size={18} /> Get Directions on Maps
+                </a>
+                <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
+                  <Calendar size={18} /> Book a School Visit
+                </button>
+              </div>
+            </div>
+
+            {/* Right Column: Embedded Google Map Card */}
+            <div className="visit-map-col">
+              <div className="visit-map-container">
+                <div className="visit-map-badge">
+                  <MapPin size={14} color="#EA580C" />
+                  <span>Live Campus Location</span>
+                </div>
+                <iframe
+                  title="Appy Kidz Kithaganur Map Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6853606684784!2d77.7265882!3d13.044146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11d4d3faefb3%3A0xc3faeb8a3791a8ee!2sAppy%20Kidz%20International%20Pre%20School%20%26%20Day%20Care!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 6. WHAT TO DISCUSS DURING YOUR SCHOOL VISIT (Section 3 Copy) */}
+      {/* 5. WHAT TO DISCUSS DURING YOUR SCHOOL VISIT (Section 3 Copy & Polished Checklist) */}
       <section className="checklist-section">
         <div className="container">
           <div className="checklist-header-box">
             <span className="section-tag checklist-tag">
-              School Visit Checklist
+              Parent Tour Guide
             </span>
             <h2 className="checklist-title">
               What to Discuss During Your School Visit
@@ -755,7 +795,7 @@ export default function HomePage() {
           <div className="visit-topics-grid">
             <div className="visit-topic-card">
               <div className="visit-topic-icon">
-                <Check size={16} strokeWidth={3} />
+                <CheckCircle2 size={20} color="#15803D" />
               </div>
               <div className="visit-topic-text">
                 Which programme suits your child's age and readiness.
@@ -764,7 +804,7 @@ export default function HomePage() {
 
             <div className="visit-topic-card">
               <div className="visit-topic-icon">
-                <Check size={16} strokeWidth={3} />
+                <CheckCircle2 size={20} color="#15803D" />
               </div>
               <div className="visit-topic-text">
                 How children are introduced to the classroom routine.
@@ -773,7 +813,7 @@ export default function HomePage() {
 
             <div className="visit-topic-card">
               <div className="visit-topic-icon">
-                <Check size={16} strokeWidth={3} />
+                <CheckCircle2 size={20} color="#15803D" />
               </div>
               <div className="visit-topic-text">
                 Learning activities and communication with parents.
@@ -782,7 +822,7 @@ export default function HomePage() {
 
             <div className="visit-topic-card">
               <div className="visit-topic-icon">
-                <Check size={16} strokeWidth={3} />
+                <CheckCircle2 size={20} color="#15803D" />
               </div>
               <div className="visit-topic-text">
                 Current class timings and daycare availability.
@@ -791,7 +831,7 @@ export default function HomePage() {
 
             <div className="visit-topic-card">
               <div className="visit-topic-icon">
-                <Check size={16} strokeWidth={3} />
+                <CheckCircle2 size={20} color="#15803D" />
               </div>
               <div className="visit-topic-text">
                 Fees, documents and admission steps.
@@ -801,18 +841,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. PRESCHOOL ADMISSIONS IN KITHAGANUR (Section 3 Copy & Conversion Box) */}
+      {/* 6. PRESCHOOL ADMISSIONS IN KITHAGANUR (Section 3 Copy & Conversion Box) */}
       <section className="admissions-section">
         <div className="container">
-          <div className="admissions-header-box">
+          <div className="admissions-card">
+            <div className="admissions-card-badge">
+              🎓 Admissions Open Academic Year 2026-27
+            </div>
             <h2 className="admissions-title">
               Preschool Admissions in Kithaganur
             </h2>
-            <p className="admissions-desc">
-              Start by sharing your child's age and the programme you are interested in. Our team will explain current availability and help you arrange a campus visit. After your visit, you can review programme details, fees and the admission process before deciding.
-            </p>
             
-            <div className="admissions-card">
+
+            <div className="admissions-inner-banner">
               <h3 className="admissions-card-title">
                 Find the Right First Step for Your Child
               </h3>
@@ -919,9 +960,6 @@ export default function HomePage() {
               Your Child’s Well-being
             </span>
             <h2 className="section-title-large">Campus Safety &amp; Facilities</h2>
-            <p className="section-subtitle-text">
-              We maintain careful child-proofing protocols across our campus. Every hallway, staircase, and play station is arranged for safety, hygiene, and freedom of movement.
-            </p>
           </div>
 
           <div className="safety-features-grid">

@@ -12,6 +12,7 @@ export default function ContactPage() {
   const [captchaCode, setCaptchaCode] = useState('AK49');
   const [userCaptcha, setUserCaptcha] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     parentName: '',
@@ -37,15 +38,35 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (userCaptcha.trim().toUpperCase() !== captchaCode) {
       alert(`Please enter the matching verification code (${captchaCode}).`);
       return;
     }
+
+    setIsSubmitting(true);
+
+    try {
+      // 1. Dispatch email notification via backend Nodemailer route
+      await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          source: 'Contact Page Campus Visit Form',
+        }),
+      });
+    } catch (err) {
+      console.warn('Backend email notification notice:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+
+    // 2. Open WhatsApp for instant two-way chat
     const msg = `Hello Appy Kidz Kithaganur! I am booking a campus visit via the website contact page.%0A%0A*Parent Name:* ${encodeURIComponent(formData.parentName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'N/A')}%0A*Child Age:* ${encodeURIComponent(formData.childAge || 'Not specified')}%0A*Programme:* ${encodeURIComponent(formData.program)}%0A*Preferred Window:* ${encodeURIComponent(formData.preferredTime)}%0A*Questions:* ${encodeURIComponent(formData.message || 'Campus tour enquiry')}%0A*Campus:* Phase 2, Aduru, Kithaganur, Bengaluru - 560049`;
-    
     window.open(`https://wa.me/917022261013?text=${msg}`, '_blank');
+
     setSubmitted(true);
   };
 
@@ -324,8 +345,19 @@ export default function ContactPage() {
                     🔒 <strong>Privacy Notice:</strong> We respect your privacy. Contact details submitted here are used solely to schedule your school walkthrough and share requested admission information.
                   </p>
 
-                  <button type="submit" className="admission-btn-submit" style={{ width: '100%', padding: '14px', fontSize: '1.02rem' }}>
-                    Confirm & Schedule Campus Visit
+                  <button
+                    type="submit"
+                    className="admission-btn-submit"
+                    disabled={isSubmitting}
+                    style={{
+                      width: '100%',
+                      padding: '14px',
+                      fontSize: '1.02rem',
+                      opacity: isSubmitting ? 0.75 : 1,
+                      cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                    }}
+                  >
+                    {isSubmitting ? 'Sending Request...' : 'Confirm & Schedule Campus Visit'}
                   </button>
                 </form>
               )}

@@ -8,6 +8,7 @@ export default function AdmissionModal({ isOpen, onClose, initialProgram = 'Pre 
   const [captchaCode, setCaptchaCode] = useState('AK72');
   const [userCaptcha, setUserCaptcha] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     parentName: '',
@@ -33,21 +34,41 @@ export default function AdmissionModal({ isOpen, onClose, initialProgram = 'Pre 
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (userCaptcha.trim().toUpperCase() !== captchaCode) {
       alert(`Please enter the matching verification code shown (${captchaCode}).`);
       return;
     }
+
+    setIsSubmitting(true);
+
+    try {
+      // 1. Dispatch email notification via backend Nodemailer route
+      await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          source: 'School Visit Modal',
+        }),
+      });
+    } catch (err) {
+      console.warn('Backend email notification notice:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+
+    // 2. Open WhatsApp for instant two-way communication
     const msg = `Hello Appy Kidz Kithaganur! I would like to book a school visit / admission enquiry.%0A%0A*Parent Name:* ${encodeURIComponent(formData.parentName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'Not provided')}%0A*Child Age:* ${encodeURIComponent(formData.childAge || 'Not specified')}%0A*Programme:* ${encodeURIComponent(formData.program)}%0A*Preferred Visit Time:* ${encodeURIComponent(formData.preferredTime)}%0A*Notes:* ${encodeURIComponent(formData.message || 'School visit enquiry')}%0A*Campus:* Phase 2, Aduru, Kithaganur, Bengaluru - 560049`;
-    
     window.open(`https://wa.me/917022261013?text=${msg}`, '_blank');
+
     setFormSubmitted(true);
     setTimeout(() => {
       onClose();
       setFormSubmitted(false);
       setUserCaptcha('');
-    }, 2000);
+    }, 2500);
   };
 
   if (!isOpen) return null;
@@ -207,8 +228,13 @@ export default function AdmissionModal({ isOpen, onClose, initialProgram = 'Pre 
             </p>
 
             <div className="admission-submit-wrap">
-              <button type="submit" className="admission-btn-submit">
-                Confirm & Book School Visit
+              <button
+                type="submit"
+                className="admission-btn-submit"
+                disabled={isSubmitting}
+                style={{ opacity: isSubmitting ? 0.75 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+              >
+                {isSubmitting ? 'Sending Request...' : 'Confirm & Book School Visit'}
               </button>
             </div>
 
