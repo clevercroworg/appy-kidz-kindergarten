@@ -479,34 +479,38 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Section 3: Exact Brief Hero Heading, Supporting Line & Intro */}
-        <div className="hero-brief-box">
-          <div className="hero-brief-container">
-            <span className="section-tag" style={{ background: '#DCFCE7', color: '#166534', marginBottom: '10px' }}>
-              Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
-            </span>
-            <h1 className="hero-h1-heading">Preschool, Nursery &amp; Daycare in Kithaganur</h1>
-            <p className="hero-h1-tagline">Little steps. Happy discoveries. A confident start.</p>
-            <p className="hero-h1-desc">
-              At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
-            </p>
-            <div className="hero-h1-actions">
-              <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
-                <Calendar size={18} /> Book a School Visit
-              </button>
-              <a
-                href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary-wa"
-              >
-                <WhatsAppIcon size={18} /> Enquire on WhatsApp
-              </a>
-              <a href="tel:+917022261013" className="btn-call-hero">
-                <Phone size={16} /> +91 70222 61013
-              </a>
-            </div>
+      {/* 2B. SECTION 3: EXACT BRIEF HERO HEADING, SUPPORTING LINE & INTRO */}
+      <section className="hero-brief-box" style={{ background: '#FFFFFF', borderBottom: '2px solid #E2E8F0', padding: '36px 0 32px', textAlign: 'center', position: 'relative', zIndex: 10 }}>
+        <div className="hero-brief-container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
+          <span className="section-tag" style={{ background: '#DCFCE7', color: '#166534', marginBottom: '12px', display: 'inline-block' }}>
+            Admissions Open 2026-27 &bull; Phase 2, Aduru, Kithaganur
+          </span>
+          <h1 className="hero-h1-heading" style={{ fontFamily: 'var(--font-heading)', fontSize: '2.3rem', fontWeight: 800, color: '#1E293B', marginBottom: '8px', lineHeight: 1.2 }}>
+            Preschool, Nursery &amp; Daycare in Kithaganur
+          </h1>
+          <p className="hero-h1-tagline" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#559E18', marginBottom: '14px' }}>
+            Little steps. Happy discoveries. A confident start.
+          </p>
+          <p className="hero-h1-desc" style={{ fontSize: '1.05rem', color: '#475569', lineHeight: 1.65, maxWidth: '820px', margin: '0 auto 24px' }}>
+            At Appy Kidz International Pre School &amp; Day Care, children learn through play, stories, creative activities and everyday discovery. Explore Playgroup, Nursery, Junior KG, Senior KG and Daycare at our campus in Phase 2, Aduru, Kithaganur, Bengaluru.
+          </p>
+          <div className="hero-h1-actions" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
+              <Calendar size={18} /> Book a School Visit
+            </button>
+            <a
+              href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20enquire%20about%20preschool,%20nursery%20and%20daycare%20admissions."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary-wa"
+            >
+              <WhatsAppIcon size={18} /> Enquire on WhatsApp
+            </a>
+            <a href="tel:+917022261013" className="btn-call-hero">
+              <Phone size={16} /> +91 70222 61013
+            </a>
           </div>
         </div>
       </section>
