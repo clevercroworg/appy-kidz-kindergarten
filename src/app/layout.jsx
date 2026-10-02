@@ -3,41 +3,24 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://appykidz.in'),
   title: {
-    default: 'Best Preschool & Day Care in Kithaganur, Bangalore | Appy Kidz',
-    template: '%s | Appy Kidz Pre School Bangalore',
+    default: 'Preschool & Daycare in Kithaganur | Appy Kidz',
+    template: '%s | Appy Kidz Kithaganur',
   },
-  description: 'Best preschool, nursery & daycare in Kithaganur, Bangalore. Safe CCTV campus & Montessori play-way learning. Admissions open 2026-27! Call +91 70222 61013.',
+  description: 'Explore preschool, nursery and daycare at Appy Kidz in Kithaganur, Bengaluru. Visit our Aduru campus and enquire about programmes and admissions.',
   keywords: [
-    // Real parent local search queries
-    'preschool in kithaganur',
-    'best preschool in kithaganur',
-    'play school in kithaganur',
-    'daycare in kithaganur',
-    'nursery school in kithaganur',
-    'play school near me',
-    'best daycare near me',
-    'kindergarten near tc palya',
-    'play school in aduru',
-    'daycare near battarahalli',
-    'preschool near kr puram bangalore',
-    'preschool near seegehalli medahalli',
-    // Admission & program search queries
-    'preschool admissions 2026-27',
-    'playgroup admission near me',
-    'nursery admission in bangalore',
-    'lkg ukg admission near me',
-    'after school daycare kithaganur',
-    'toddler daycare kithaganur bangalore',
-    // Safety & curriculum parent priorities
-    'safe preschool with cctv bangalore',
-    'montessori play school kithaganur',
-    'affordable preschool in bangalore east',
-    'award winning preschool bangalore',
-    // Brand queries
-    'appy kidz international pre school',
-    'appy kidz kithaganur',
-    'appy kidz bangalore',
-    'child care center kithaganur 560049'
+    'Appy Kidz Kithaganur',
+    'preschool and daycare in Kithaganur',
+    'preschool in Kithaganur',
+    'daycare in Kithaganur',
+    'nursery school in Kithaganur',
+    'play school in Kithaganur',
+    'playgroup Kithaganur',
+    'pre-KG Kithaganur',
+    'childcare Kithaganur',
+    'daycare near Aduru',
+    'preschool near TC Palya',
+    'preschool near Battarahalli',
+    'preschool near KR Puram'
   ],
   authors: [{ name: 'Appy Kidz International Pre School' }],
   creator: 'Appy Kidz International Pre School',
@@ -65,16 +48,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Appy Kidz | Best Preschool & Day Care in Kithaganur, Bangalore',
-    description: 'Award-winning preschool, nursery & daycare in Kithaganur. Safe CCTV campus, Montessori play-way learning & caring staff. Admissions Open 2026-27!',
+    title: 'Preschool & Daycare in Kithaganur | Appy Kidz',
+    description: 'Explore preschool, nursery and daycare at Appy Kidz in Kithaganur, Bengaluru. Visit our Aduru campus and enquire about programmes and admissions.',
     url: 'https://appykidz.in',
-    siteName: 'Appy Kidz International Pre School & Day Care',
+    siteName: 'Appy Kidz International Pre School & Day Care — Kithaganur',
     images: [
       {
         url: '/assets/og-share-preview.jpg',
         width: 1200,
         height: 630,
-        alt: 'Appy Kidz International Pre School & Day Care Bangalore - Admissions Open 2026-27',
+        alt: 'Appy Kidz International Pre School & Day Care Kithaganur Bangalore',
       },
     ],
     locale: 'en_IN',
@@ -82,8 +65,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Preschool & Daycare in Kithaganur | Appy Kidz Bangalore',
-    description: 'Safe child-friendly campus, Montessori learning & CCTV daycare in Kithaganur, Bangalore East. Admissions Open 2026-27.',
+    title: 'Preschool & Daycare in Kithaganur | Appy Kidz',
+    description: 'Explore preschool, nursery and daycare at Appy Kidz in Kithaganur, Bengaluru. Visit our Aduru campus and enquire about programmes and admissions.',
     images: ['/assets/og-share-preview.jpg'],
   },
   alternates: {
@@ -178,34 +161,66 @@ export default function RootLayout({ children }) {
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Which is the best preschool and daycare in Kithaganur, Bangalore?',
+            name: 'Where is Appy Kidz in Kithaganur?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Appy Kidz International Pre School is recognized as one of the best preschools and daycare centers in Kithaganur, Bangalore East. Winner of Best Pre School Startup at the 30th Edition Indian School Awards, it features 100% child-proofed classrooms, live CCTV monitoring, and an activity-driven Montessori curriculum.'
+              text: 'Our Bengaluru campus is located in Phase 2, Aduru, Kithaganur, Bengaluru, Karnataka 560049. Use the directions link on our Contact page to plan your visit.'
             }
           },
           {
             '@type': 'Question',
-            name: 'What programs and age groups are offered at Appy Kidz?',
+            name: 'Which programmes are available at Appy Kidz Kithaganur?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Appy Kidz caters to children aged 1.5 to 6 years across Playgroup (1.5 - 2.5 yrs), Nursery (2.5 - 3.5 yrs), LKG (3.5 - 4.5 yrs), UKG (4.5 - 5.5 yrs), and extended Daycare facilities for working parents.'
+              text: 'The campus offers Playgroup, Nursery / Pre-KG, Junior KG, Senior KG and Daycare. Contact our team to confirm age eligibility, timings and current availability for your child.'
             }
           },
           {
             '@type': 'Question',
-            name: 'Are admissions open for 2026-27 at Appy Kidz Kithaganur?',
+            name: 'Does Appy Kidz offer daycare in Kithaganur?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes! Admissions are officially open for the 2026-27 academic session. Parents can schedule a campus tour or apply online by calling +91 70222 61013.'
+              text: 'Yes. Contact the Kithaganur campus to discuss your child’s age, preferred schedule and current daycare arrangements.'
             }
           },
           {
             '@type': 'Question',
-            name: 'What safety measures are in place at Appy Kidz?',
+            name: 'What is the difference between preschool and daycare?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Appy Kidz provides a 100% child-proofed campus with full CCTV surveillance, police-verified caring staff, sanitized play zones, first-aid readiness, and strict pick-up authentication protocols.'
+              text: 'Preschool focuses on early learning through an age-appropriate programme. Daycare provides childcare for an agreed schedule. If you need both, ask our team how the available programmes can fit together.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'How do I enquire about nursery admission?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Call +91 70222 61013 or send a WhatsApp message with your child’s age. Our team will explain current admission availability and help arrange a campus visit.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Can I visit the school before enrolling my child?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Book a school visit to explore the campus, meet our team and discuss the programme, timings, fees and admission process.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What are the preschool and daycare fees?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Contact our team for the current fee schedule for your chosen programme. Ask about registration, tuition, daycare charges and any additional items before enrolling.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Is the campus an option for families near TC Palya or Battarahalli?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Our campus is in Kithaganur. Families from TC Palya, Battarahalli and nearby neighbourhoods can check the directions and visit to decide whether the journey suits their daily routine.'
             }
           }
         ]
