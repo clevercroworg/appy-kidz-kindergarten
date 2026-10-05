@@ -19,8 +19,12 @@ import {
   ChevronRight,
   ExternalLink,
   ChevronLeft,
+  ChevronDown,
+  ChevronUp,
   Star,
-  Check
+  Check,
+  ZoomIn,
+  Maximize2
 } from 'lucide-react';
 
 import { WhatsAppIcon } from '../components/Icons';
@@ -33,6 +37,8 @@ export default function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeAwardPhoto, setActiveAwardPhoto] = useState('stage');
   const [lightboxImg, setLightboxImg] = useState(null);
+  const [galleryFilter, setGalleryFilter] = useState('all');
+  const [isGalleryExpanded, setIsGalleryExpanded] = useState(false);
   
   // Hero Banner Slider State
   const [currentBanner, setCurrentBanner] = useState(0);
@@ -48,35 +54,35 @@ export default function HomePage() {
       id: 1,
       tag: '🎓 Admissions Open 2026-27',
       shortTitle: 'Admissions 2026-27',
-      imageSrc: '/assets/banners/banner-1-admissions-open.jpg?v=20261002',
+      imageSrc: '/assets/banners/banner-admissions-open-2026.jpg?v=20261005',
       imageAlt: 'Appy Kidz International Pre School Admissions Open 2026-27 Banner',
       title: 'Admissions Open for Academic Year 2026-27',
       subtitle: 'Playgroup • Nursery Pre-KG • Junior KG • Senior KG • Daycare in Kithaganur, Bangalore'
     },
     {
       id: 2,
-      tag: '⭐ 17+ Years Network Legacy',
-      shortTitle: '17+ Years Legacy',
-      imageSrc: '/assets/banners/banner-2-talent-excellence.jpg?v=20261002',
-      imageAlt: "Appy Kidz 17+ Years of Educational Excellence Nurturing Every Child's Talent Banner",
-      title: "17+ Years of Educational Excellence",
-      subtitle: "Nurturing Every Child's Talent, Creative Arts, Stage Confidence & Joyful Discovery"
+      tag: '🤸 Joyful Outdoor Play & Growth',
+      shortTitle: 'Outdoor Play',
+      imageSrc: '/assets/banners/banner-outdoor-play-activities.jpg?v=20261005',
+      imageAlt: 'Appy Kidz Outdoor Play Wave Slide Swings and Turf Playground Activities Banner',
+      title: 'Play, Explore & Grow Together',
+      subtitle: 'Lush Turf Playground • Swings & Wave Slides • Joyful Early Physical & Social Discovery'
     },
     {
       id: 3,
-      tag: '🐛 Safe Campus & Mascot',
-      shortTitle: 'Safe Campus',
-      imageSrc: '/assets/banners/banner-3-safe-mascot.jpg?v=20261002',
-      imageAlt: 'Appy Kidz Safe Loving Campus and Official Mascot Banner',
+      tag: '🐛 Trademark Mascot & Safe Campus',
+      shortTitle: 'Mascot & Safety',
+      imageSrc: '/assets/banners/banner-safe-campus-worm-mascot.jpg?v=20261005',
+      imageAlt: 'Appy Kidz Safe Loving Campus and Official Trademark Worm Mascot Appy Banner',
       title: 'A Safe, Loving & Great Place to Grow',
-      subtitle: 'Child Proofed Campus • Official Trademark Mascot Appy The Bookworm'
+      subtitle: 'Child-Safe Campus • Official Trademark Mascot Appy The Bookworm • CCTV Monitored'
     },
     {
       id: 4,
       tag: '🏆 Best Pre School Startup',
       shortTitle: 'Award Winner',
-      imageSrc: '/assets/banners/banner-4-awards.jpg?v=20261002',
-      imageAlt: 'Appy Kidz Award-Winning Preschool Indian School Awards Banner',
+      imageSrc: '/assets/banners/banner-award-winning-excellence.jpg?v=20261005',
+      imageAlt: 'Appy Kidz Award-Winning Preschool Indian School Awards Bangalore Banner',
       title: 'Award-Winning Preschool Excellence',
       subtitle: 'Honored as Best Pre School Startup at 30th Edition Indian School Awards Bangalore'
     }
@@ -221,28 +227,123 @@ export default function HomePage() {
 
   const safetyItems = [
     {
-      img: '/assets/safety-stairs-netting-1.jpg',
-      badge: 'Child Proofed',
-      title: 'Floor-to-Ceiling Safety Nets',
-      desc: 'Protective netting enclosing stairwells and balconies to ensure security for energetic young learners.'
+      img: '/assets/learning-walls-numbers-stairs.jpg',
+      badge: 'Child Proofed Safety',
+      title: 'Stairwell Safety Nets & Learning Steps',
+      desc: 'Floor-to-ceiling protective netting securely enclosing stairwells, paired with painted counting stairs.'
+    },
+    {
+      img: '/assets/outdoor-play-roadway.jpg',
+      badge: 'Outdoor Gross Motor',
+      title: 'Lush Turf Playground & Roadway',
+      desc: 'Artificial grass safety turf, toddler bucket swings, safety slides, sandbox, and mini roadway track.'
+    },
+    {
+      img: '/assets/indoor-ball-pool.jpg',
+      badge: 'Sensory Play Zone',
+      title: 'Padded Indoor Ball Pool Pit',
+      desc: 'Cushioned soft-play ball pit with high impact-absorbing boundaries and cheerful wall decals for safe toddler play.'
     },
     {
       img: '/assets/hygiene-washroom.jpg',
       badge: 'Sanitary Standards',
-      title: 'Child-Height Washrooms',
-      desc: 'Ergonomic mini wash basins and child-sized sanitized toilets fostering independence, hygiene, and potty training confidence.'
+      title: 'Child-Height Washrooms & Basins',
+      desc: 'Miniature sanitized washbasins and ergonomic toddler toilets fostering independence, hygiene, and potty training confidence.'
+    },
+    {
+      img: '/assets/classroom-senior-kg-cctv.jpg',
+      badge: '24/7 Monitored Campus',
+      title: 'CCTV-Monitored Sunlit Classrooms',
+      desc: 'Continuous CCTV security coverage, generous natural daylight ventilation, and rounded child-safe desks.'
     },
     {
       img: '/assets/play-area-foam-mats.jpg',
       badge: 'Impact Absorption',
-      title: 'High-Density Foam Play Surfaces',
-      desc: 'High-density EVA interlocking safety mats and soft play corners that cushion falls during active gross motor play.'
+      title: 'High-Density EVA Foam Play Floors',
+      desc: 'Non-toxic interlocking safety foam mats cushioning falls during active play, yoga, and sensory activities.'
+    }
+  ];
+
+  const campusGalleryItems = [
+    {
+      id: 'outdoor-roadway',
+      category: 'outdoor',
+      categoryLabel: 'Outdoor Play',
+      img: '/assets/outdoor-play-roadway.jpg',
+      title: 'Lush Turf Playground & Mini Roadway',
+      desc: 'Safe grass turf, swings, wave slide, sandbox, and painted roadway track for tricycle and balance play.'
     },
     {
-      img: '/assets/classroom-activity-tables.jpg',
-      badge: 'Ergonomic Design',
-      title: 'Round Non-Toxic Activity Tables',
-      desc: 'Rounded corner furniture with zero sharp edges, non-toxic lead-free paint finishes, and bright daylight ventilation.'
+      id: 'outdoor-climbing',
+      category: 'outdoor',
+      categoryLabel: 'Outdoor Play',
+      img: '/assets/outdoor-play-climbing-gym.jpg',
+      title: 'Jungle Climbing Gym, Swings & Seesaw',
+      desc: 'Multi-play climbing frame, seesaw, toddler safety harness swings, and rainbow perimeter fencing.'
+    },
+    {
+      id: 'indoor-ball-pool',
+      category: 'play',
+      categoryLabel: 'Play & Sensory',
+      img: '/assets/indoor-ball-pool.jpg',
+      title: 'Padded Indoor Ball Pool Pit',
+      desc: 'Vibrant indoor sensory ball pool enclosed with soft foam boundaries and cheerful wall art.'
+    },
+    {
+      id: 'learning-stairs',
+      category: 'walls',
+      categoryLabel: 'Learning Walls',
+      img: '/assets/learning-walls-numbers-stairs.jpg',
+      title: 'Interactive Number Stairs (1 to 14)',
+      desc: 'Every step teaches numbers and phonics, framed by lush tree murals and floor-to-ceiling safety netting.'
+    },
+    {
+      id: 'senior-kg-room',
+      category: 'classrooms',
+      categoryLabel: 'Classrooms',
+      img: '/assets/classroom-senior-kg-cctv.jpg',
+      title: 'Senior KG Montessori & Prep Room',
+      desc: 'Sunlit learning space equipped with ergonomic dual desks, whiteboard, handprint mural, and CCTV camera.'
+    },
+    {
+      id: 'kindergarten-room',
+      category: 'classrooms',
+      categoryLabel: 'Classrooms',
+      img: '/assets/classroom-kindergarten-desks.jpg',
+      title: 'Kindergarten Early Learning Suite',
+      desc: 'Dual-seater desks, colorful rainbow mural, alphabet partition, and interactive numeracy pocket board.'
+    },
+    {
+      id: 'activity-room',
+      category: 'play',
+      categoryLabel: 'Play & Sensory',
+      img: '/assets/classroom-craft-activity-tables.jpg',
+      title: 'Hands-On Activity & Craft Studio',
+      desc: 'Rounded activity tables, foam-cushioned dual-tone floor, sight words display, and creative crafts.'
+    },
+    {
+      id: 'multilingual-room',
+      category: 'walls',
+      categoryLabel: 'Learning Walls',
+      img: '/assets/classroom-language-multilingual.jpg',
+      title: 'Multilingual Phonics & Number House',
+      desc: 'Kannada alphabet clouds, Hindi vowel bunting, balloon number house (1-10), and collaborative seating.'
+    },
+    {
+      id: 'toddler-pencil-room',
+      category: 'classrooms',
+      categoryLabel: 'Classrooms',
+      img: '/assets/classroom-toddler-pencil-chart.jpg',
+      title: 'Playgroup & Nursery Discovery Corner',
+      desc: 'Child-sized round tables, pencil-themed numeracy wall (1-70), and interactive alphabet pocket chart.'
+    },
+    {
+      id: 'students-uniform',
+      category: 'play',
+      categoryLabel: 'Campus Life',
+      img: '/assets/students-uniform-assembly.jpg',
+      title: 'Morning Assembly & Physical Coordination',
+      desc: 'Happy students in official school uniforms learning morning discipline, peer collaboration, and body balance.'
     }
   ];
 
@@ -370,6 +471,71 @@ export default function HomePage() {
   const prevTesti = () => {
     setActiveTestiIndex((prev) => (prev - 1 + parentTestimonials.length) % parentTestimonials.length);
   };
+
+  const filteredGalleryItems = galleryFilter === 'all'
+    ? campusGalleryItems
+    : campusGalleryItems.filter(item => item.category === galleryFilter);
+
+  const displayedGalleryItems = (galleryFilter === 'all' && !isGalleryExpanded)
+    ? filteredGalleryItems.slice(0, 6)
+    : filteredGalleryItems;
+
+  const openGalleryLightbox = (item, index) => {
+    setLightboxImg({
+      ...item,
+      currentIndex: index,
+      totalCount: campusGalleryItems.length,
+      itemsList: campusGalleryItems
+    });
+  };
+
+  // Keyboard navigation & body scroll lock for Lightbox
+  useEffect(() => {
+    if (!lightboxImg) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setLightboxImg(null);
+      } else if (e.key === 'ArrowRight') {
+        const isObject = typeof lightboxImg === 'object';
+        const currentSrc = isObject ? lightboxImg.img : lightboxImg;
+        const itemsList = isObject && lightboxImg.itemsList ? lightboxImg.itemsList : campusGalleryItems;
+        const currentIndex = itemsList.findIndex(item => item.img === currentSrc);
+        if (currentIndex !== -1) {
+          const nextIdx = (currentIndex + 1) % itemsList.length;
+          setLightboxImg({
+            ...itemsList[nextIdx],
+            currentIndex: nextIdx,
+            totalCount: itemsList.length,
+            itemsList
+          });
+        }
+      } else if (e.key === 'ArrowLeft') {
+        const isObject = typeof lightboxImg === 'object';
+        const currentSrc = isObject ? lightboxImg.img : lightboxImg;
+        const itemsList = isObject && lightboxImg.itemsList ? lightboxImg.itemsList : campusGalleryItems;
+        const currentIndex = itemsList.findIndex(item => item.img === currentSrc);
+        if (currentIndex !== -1) {
+          const prevIdx = (currentIndex - 1 + itemsList.length) % itemsList.length;
+          setLightboxImg({
+            ...itemsList[prevIdx],
+            currentIndex: prevIdx,
+            totalCount: itemsList.length,
+            itemsList
+          });
+        }
+      }
+    };
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [lightboxImg]);
 
   return (
     <>
@@ -975,8 +1141,16 @@ export default function HomePage() {
               <div
                 key={idx}
                 className="safety-card"
-                onClick={() => setLightboxImg(item.img)}
-                title="Click to view full photo"
+                onClick={() => setLightboxImg({ img: item.img, title: item.title, desc: item.desc, categoryLabel: item.badge })}
+                title="Tap to view photo in full resolution"
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setLightboxImg({ img: item.img, title: item.title, desc: item.desc, categoryLabel: item.badge });
+                  }
+                }}
               >
                 <div className="safety-img-wrap">
                   <img src={item.img} alt={item.title} className="safety-img" />
@@ -988,6 +1162,132 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 10B. CAMPUS & LEARNING SPACES SHOWCASE (Authentic Photo Gallery) */}
+      <section className="campus-gallery-section" id="campus-tour">
+        <div className="container">
+          <div className="section-header-center">
+            <span className="section-tag" style={{ background: '#E0F2FE', color: '#0369A1' }}>
+              Campus Walkthrough &amp; Environments
+            </span>
+            <h2 className="section-title-large">Explore Our Campus &amp; Learning Spaces</h2>
+            <p style={{ color: '#64748B', fontSize: '1rem', maxWidth: '720px', margin: '10px auto 0', lineHeight: 1.6 }}>
+              From our outdoor turf playground and interactive number stairs to Montessori suites and sensory ball pools, see where your child will learn and play every day.
+            </p>
+          </div>
+
+          {/* Filter Bar */}
+          <div className="gallery-filter-bar">
+            {[
+              { key: 'all', label: 'All Spaces (10)' },
+              { key: 'outdoor', label: 'Outdoor Play' },
+              { key: 'classrooms', label: 'Classrooms' },
+              { key: 'play', label: 'Play & Campus Life' },
+              { key: 'walls', label: 'Learning Walls' }
+            ].map(tab => (
+              <button
+                key={tab.key}
+                onClick={() => setGalleryFilter(tab.key)}
+                className={`gallery-filter-btn ${galleryFilter === tab.key ? 'active' : ''}`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Gallery Cards Grid (First 6 cards shown by default when all is selected) */}
+          <div className="campus-gallery-grid">
+            {displayedGalleryItems.map((item, index) => (
+              <div
+                key={item.id}
+                className="campus-gallery-card"
+                onClick={() => openGalleryLightbox(item, index)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openGalleryLightbox(item, index);
+                  }
+                }}
+                aria-label={`View full photo: ${item.title}`}
+                title="Tap to view photo in full resolution"
+              >
+                {/* Full-bleed campus photo */}
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="gallery-card-img"
+                  loading="lazy"
+                />
+
+                {/* Top Badges Bar */}
+                <div className="gallery-card-top-bar">
+                  <span className="gallery-card-badge">{item.categoryLabel}</span>
+                  <div className="gallery-card-tap-pill">
+                    <Maximize2 size={12} />
+                    <span>Tap to view</span>
+                  </div>
+                </div>
+
+                {/* Bottom Overlay with Rich Gradient Scrim */}
+                <div className="gallery-card-overlay">
+                  <h3 className="gallery-card-title">{item.title}</h3>
+                  <p className="gallery-card-desc">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Show More / Show Less Expander Button (shows first 2 rows / 6 cards initially) */}
+          {galleryFilter === 'all' && filteredGalleryItems.length > 6 && (
+            <div className="gallery-show-more-wrap">
+              <button
+                onClick={() => setIsGalleryExpanded(!isGalleryExpanded)}
+                className="gallery-show-more-btn"
+                aria-expanded={isGalleryExpanded}
+              >
+                {isGalleryExpanded ? (
+                  <>
+                    <span>Show Less Spaces</span>
+                    <ChevronUp size={18} />
+                  </>
+                ) : (
+                  <>
+                    <span>Explore More Campus Spaces ({filteredGalleryItems.length - 6} More)</span>
+                    <ChevronDown size={18} />
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+          {/* Bottom Action Strip */}
+          <div className="gallery-cta-strip">
+            <div>
+              <strong style={{ display: 'block', fontSize: '1.15rem', color: '#1E293B', marginBottom: '4px' }}>
+                Would you like to explore these spaces in person?
+              </strong>
+              <span style={{ fontSize: '0.9rem', color: '#64748B' }}>
+                Schedule a guided walkthrough with our admissions coordinator at Building No 30, Aryan Springz, Phase 2, Kithaganur.
+              </span>
+            </div>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <button onClick={() => setIsModalOpen(true)} className="btn-primary-hero">
+                <Calendar size={17} /> Schedule Campus Walkthrough
+              </button>
+              <a
+                href="https://wa.me/917022261013?text=Hello%20Appy%20Kidz%20Kithaganur!%20I%20would%20like%20to%20schedule%20a%20campus%20walkthrough."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary-wa"
+              >
+                <WhatsAppIcon size={18} /> WhatsApp Visit Booking
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1160,36 +1460,113 @@ export default function HomePage() {
         initialProgram="Playgroup (1.5 - 2.5 yrs)"
       />
 
-      {/* 16. IMAGE LIGHTBOX MODAL */}
-      {lightboxImg && (
-        <div
-          className="modal-overlay"
-          onClick={() => setLightboxImg(null)}
-          style={{ zIndex: 1100, cursor: 'zoom-out' }}
-        >
-          <div style={{ position: 'relative', maxWidth: '88vw', maxHeight: '88vh' }}>
-            <button
-              onClick={() => setLightboxImg(null)}
-              className="modal-close-btn"
-              style={{ top: '-40px', right: '0' }}
-            >
-              <X size={24} />
-            </button>
-            <img
-              src={lightboxImg}
-              alt="Enlarged View"
-              style={{
-                maxWidth: '100%',
-                maxHeight: '85vh',
-                borderRadius: '16px',
-                boxShadow: '0 25px 60px rgba(0,0,0,0.5)',
-                objectFit: 'contain',
-                background: '#fff'
-              }}
-            />
+      {/* 16. ENHANCED IMAGE LIGHTBOX MODAL */}
+      {lightboxImg && (() => {
+        const isObject = typeof lightboxImg === 'object';
+        const currentSrc = isObject ? lightboxImg.img : lightboxImg;
+        const currentTitle = isObject ? lightboxImg.title : null;
+        const currentDesc = isObject ? lightboxImg.desc : null;
+        const currentCategory = isObject ? lightboxImg.categoryLabel : null;
+        const itemsList = isObject && lightboxImg.itemsList ? lightboxImg.itemsList : campusGalleryItems;
+        const currentIndex = itemsList.findIndex(item => item.img === currentSrc);
+        const hasNav = currentIndex !== -1 && itemsList.length > 1;
+
+        const handleNext = (e) => {
+          e.stopPropagation();
+          const nextIdx = (currentIndex + 1) % itemsList.length;
+          setLightboxImg({
+            ...itemsList[nextIdx],
+            currentIndex: nextIdx,
+            totalCount: itemsList.length,
+            itemsList
+          });
+        };
+
+        const handlePrev = (e) => {
+          e.stopPropagation();
+          const prevIdx = (currentIndex - 1 + itemsList.length) % itemsList.length;
+          setLightboxImg({
+            ...itemsList[prevIdx],
+            currentIndex: prevIdx,
+            totalCount: itemsList.length,
+            itemsList
+          });
+        };
+
+        return (
+          <div
+            className="lightbox-backdrop"
+            onClick={() => setLightboxImg(null)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Campus Space Photo Viewer"
+          >
+            {/* Top Bar with Space Counter and Close Button */}
+            <div className="lightbox-top-bar" onClick={(e) => e.stopPropagation()}>
+              <div className="lightbox-counter">
+                {hasNav ? (
+                  <span>
+                    <strong>{currentIndex + 1}</strong> of {itemsList.length} Campus Spaces
+                  </span>
+                ) : (
+                  <span>Campus Photo Preview</span>
+                )}
+              </div>
+              <button
+                onClick={() => setLightboxImg(null)}
+                className="lightbox-close-btn"
+                aria-label="Close photo preview"
+                title="Close (Esc)"
+              >
+                <X size={22} />
+              </button>
+            </div>
+
+            {/* Navigation Arrows */}
+            {hasNav && (
+              <>
+                <button
+                  className="lightbox-nav-btn lightbox-prev-btn"
+                  onClick={handlePrev}
+                  aria-label="Previous photo"
+                  title="Previous photo (Left arrow)"
+                >
+                  <ChevronLeft size={28} />
+                </button>
+                <button
+                  className="lightbox-nav-btn lightbox-next-btn"
+                  onClick={handleNext}
+                  aria-label="Next photo"
+                  title="Next photo (Right arrow)"
+                >
+                  <ChevronRight size={28} />
+                </button>
+              </>
+            )}
+
+            {/* Photo & Caption Container */}
+            <div className="lightbox-content-box" onClick={(e) => e.stopPropagation()}>
+              <div className="lightbox-image-wrap">
+                <img
+                  src={currentSrc}
+                  alt={currentTitle || 'Appy Kidz Campus Space'}
+                  className="lightbox-image"
+                />
+              </div>
+
+              {(currentTitle || currentDesc) && (
+                <div className="lightbox-caption">
+                  {currentCategory && (
+                    <span className="lightbox-caption-tag">{currentCategory}</span>
+                  )}
+                  {currentTitle && <h3 className="lightbox-caption-title">{currentTitle}</h3>}
+                  {currentDesc && <p className="lightbox-caption-desc">{currentDesc}</p>}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </>
   );
 }

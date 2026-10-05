@@ -65,8 +65,8 @@ export default function DaycarePage() {
             <div>
               <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 16px 40px rgba(0,0,0,0.1)', border: '4px solid #FFFFFF' }}>
                 <img
-                  src="/assets/play-area-foam-mats.jpg"
-                  alt="Childcare play area with cushioned foam floor mats at Appy Kidz Kithaganur"
+                  src="/assets/indoor-ball-pool.jpg"
+                  alt="Safe indoor ball pool and toddler sensory play pit at Appy Kidz Kithaganur"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
               </div>
@@ -89,7 +89,7 @@ export default function DaycarePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '22px', marginBottom: '36px' }}>
             <div style={{ background: '#F8FAFC', padding: '24px', borderRadius: '14px', border: '1px solid #E2E8F0' }}>
               <Moon size={28} color="#0284C7" style={{ marginBottom: '12px' }} />
-              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Quiet Rest & Nap Suites</h3>
+              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Quiet Rest &amp; Nap Suites</h3>
               <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6 }}>
                 Dedicated hygienic rest areas where toddlers can nap peacefully following their personalized circadian rhythm.
               </p>
@@ -97,7 +97,7 @@ export default function DaycarePage() {
 
             <div style={{ background: '#F8FAFC', padding: '24px', borderRadius: '14px', border: '1px solid #E2E8F0' }}>
               <Heart size={28} color="#E11D48" style={{ marginBottom: '12px' }} />
-              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Engaging Play & Care</h3>
+              <h3 style={{ fontSize: '1.15rem', color: '#1E293B', marginBottom: '8px' }}>Engaging Play &amp; Care</h3>
               <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6 }}>
                 Nurturing caregivers facilitating indoor activities, storytelling, creative expression and guided peer play in a warm environment.
               </p>
@@ -109,6 +109,37 @@ export default function DaycarePage() {
               <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6 }}>
                 Strict child pick-up authorization protocols with verified identity checks and continuous CCTV campus monitoring.
               </p>
+            </div>
+          </div>
+
+          {/* Dedicated Play Spaces Showcase */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/indoor-ball-pool.jpg"
+                alt="Indoor padded ball pool for toddlers"
+                style={{ width: '100%', height: '200px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Indoor Sensory Ball Pool</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Cushioned soft-play ball pool designed for safe motor coordination and joyful sensory play.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/outdoor-play-roadway.jpg"
+                alt="Outdoor artificial grass playground and roadway"
+                style={{ width: '100%', height: '200px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Secure Outdoor Turf &amp; Roadway</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Lush grass turf with toddler bucket swings, safety slides, sandbox, and painted roadway track.
+                </p>
+              </div>
             </div>
           </div>
 

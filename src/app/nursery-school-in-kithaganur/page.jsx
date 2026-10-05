@@ -127,6 +127,37 @@ export default function NurseryPage() {
               </p>
             </div>
           </div>
+
+          {/* Nursery Classroom Environments Showcase */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '36px' }}>
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/classroom-toddler-pencil-chart.jpg"
+                alt="Toddler foundation and pencil numeracy chart corner"
+                style={{ width: '100%', height: '210px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Pre-KG Discovery &amp; Numeracy Corner</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Pencil-themed number charts (1-70), child-sized round tables, and tactile learning materials.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/classroom-language-multilingual.jpg"
+                alt="Multilingual phonics and language activity room"
+                style={{ width: '100%', height: '210px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Multilingual Phonics &amp; Rhymes Studio</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Kannada alphabet clouds, Hindi vowel bunting, balloon number house, and interactive speech activities.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

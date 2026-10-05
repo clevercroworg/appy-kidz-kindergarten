@@ -103,6 +103,7 @@ export default function Navbar({ onOpenModal }) {
               <li><Link href="/preschool-in-kithaganur" className="nav-pill">Preschool</Link></li>
               <li><Link href="/nursery-school-in-kithaganur" className="nav-pill">Nursery</Link></li>
               <li><Link href="/daycare-in-kithaganur" className="nav-pill">Daycare</Link></li>
+              <li><Link href="/#campus-tour" className="nav-pill">Campus Tour</Link></li>
               <li><Link href="/contact" className="nav-pill">Contact</Link></li>
             </ul>
           </nav>
@@ -131,6 +132,7 @@ export default function Navbar({ onOpenModal }) {
               <Link href="/preschool-in-kithaganur" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Preschool Programmes</Link>
               <Link href="/nursery-school-in-kithaganur" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Nursery / Pre-KG</Link>
               <Link href="/daycare-in-kithaganur" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Daycare Facility</Link>
+              <Link href="/#campus-tour" onClick={() => setMobileMenuOpen(false)} style={{ color: '#FEF08A', fontWeight: 'bold' }}>Campus Tour &amp; Spaces</Link>
               <Link href="/#proud-moments" onClick={() => setMobileMenuOpen(false)} style={{ color: '#fff', fontWeight: 'bold' }}>Awards & Recognition</Link>
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)} style={{ color: '#fff', fontWeight: 'bold' }}>Contact & Directions</Link>
               <button

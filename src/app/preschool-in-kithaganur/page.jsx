@@ -172,10 +172,41 @@ export default function PreschoolPage() {
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 12px 30px rgba(0,0,0,0.08)' }}>
                 <img
-                  src="/assets/classroom-activity-tables.jpg"
-                  alt="Montessori apparatus and sensory learning tables at Appy Kidz Kithaganur"
+                  src="/assets/classroom-kindergarten-desks.jpg"
+                  alt="Kindergarten early learning classroom with alphabet partition and rainbow wall at Appy Kidz Kithaganur"
                   style={{ width: '100%', display: 'block' }}
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* Visual Showcase: Classrooms & Gross Motor Play */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '36px' }}>
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/classroom-senior-kg-cctv.jpg"
+                alt="Senior KG classroom with ergonomic desks and CCTV"
+                style={{ width: '100%', height: '210px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Senior KG &amp; Montessori Suite</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Sunlit learning classroom equipped with dual ergonomic desks, daylight windows, and 24/7 CCTV surveillance.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ background: '#FFFFFF', borderRadius: '16px', overflow: 'hidden', border: '1.5px solid #E2E8F0', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+              <img
+                src="/assets/outdoor-play-climbing-gym.jpg"
+                alt="Outdoor jungle climbing gym and swings"
+                style={{ width: '100%', height: '210px', objectFit: 'cover', display: 'block' }}
+              />
+              <div style={{ padding: '16px 20px' }}>
+                <strong style={{ display: 'block', fontSize: '1.05rem', color: '#1E293B', marginBottom: '4px' }}>Outdoor Gross Motor Play Gym</strong>
+                <p style={{ fontSize: '0.86rem', color: '#64748B', margin: 0, lineHeight: 1.5 }}>
+                  Jungle climbing frames, seesaw, toddler safety harness swings, and rainbow security fencing.
+                </p>
               </div>
             </div>
           </div>
