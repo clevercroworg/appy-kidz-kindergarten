@@ -48,6 +48,31 @@ export default function HomePage() {
   const [activeTestiIndex, setActiveTestiIndex] = useState(0);
   const [isTestiPaused, setIsTestiPaused] = useState(false);
 
+  // 3 Authentic Classroom Showcase Spaces (Smooth 2-second crossfade)
+  const [classroomIndex, setClassroomIndex] = useState(0);
+  const classroomSpaces = [
+    {
+      src: '/assets/classroom-spaces-1.jpg?v=20261006d',
+      alt: 'Appy Kidz Kithaganur Numeracy and Alphabet Learning Corner'
+    },
+    {
+      src: '/assets/classroom-spaces-2.jpg?v=20261006d',
+      alt: 'Appy Kidz Kithaganur Creative Activity Table and Sight Words Room'
+    },
+    {
+      src: '/assets/classroom-spaces-3.jpg?v=20261006d',
+      alt: 'Appy Kidz Kithaganur Kindergarten Desks and Wall Art Space'
+    }
+  ];
+
+  // Auto rotate classroom photos smoothly every 2 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setClassroomIndex((prev) => (prev + 1) % classroomSpaces.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, [classroomSpaces.length]);
+
   // 4 Regenerated Themed Full-Width Banners
   const heroBanners = [
     {
@@ -63,7 +88,7 @@ export default function HomePage() {
       id: 2,
       tag: '🤸 Joyful Outdoor Play & Growth',
       shortTitle: 'Outdoor Play',
-      imageSrc: '/assets/banners/banner-outdoor-play-activities.jpg?v=20261005',
+      imageSrc: '/assets/banners/banner-outdoor-play-activities.jpg?v=20261006b',
       imageAlt: 'Appy Kidz Outdoor Play Wave Slide Swings and Turf Playground Activities Banner',
       title: 'Play, Explore & Grow Together',
       subtitle: 'Lush Turf Playground • Swings & Wave Slides • Joyful Early Physical & Social Discovery'
@@ -708,13 +733,62 @@ export default function HomePage() {
             </div>
 
             <div className="about-compact-visual">
-              <div className="about-visual-card">
-                <img
-                  src="/assets/classroom-activity-tables.jpg"
-                  alt="Appy Kidz Kithaganur Classroom and Activity Center"
-                  className="about-main-img"
-                  onError={(e) => { e.target.src = '/assets/classroom-green-desks.jpg'; }}
-                />
+              <div className="about-visual-card" style={{ position: 'relative', overflow: 'hidden' }}>
+                {classroomSpaces.map((imgItem, idx) => (
+                  <img
+                    key={imgItem.src}
+                    src={imgItem.src}
+                    alt={imgItem.alt}
+                    className="about-main-img"
+                    style={{
+                      position: idx === 0 ? 'relative' : 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      opacity: idx === classroomIndex ? 1 : 0,
+                      transition: 'opacity 0.75s ease-in-out',
+                      zIndex: idx === classroomIndex ? 2 : 1,
+                      pointerEvents: idx === classroomIndex ? 'auto' : 'none'
+                    }}
+                    loading={idx === 0 ? 'eager' : 'lazy'}
+                  />
+                ))}
+
+                {/* Subtle Space Indicator Dots */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '14px',
+                    right: '14px',
+                    display: 'flex',
+                    gap: '6px',
+                    zIndex: 10,
+                    background: 'rgba(0, 0, 0, 0.45)',
+                    padding: '4px 8px',
+                    borderRadius: '9999px',
+                    backdropFilter: 'blur(4px)'
+                  }}
+                  aria-label="Classroom spaces indicator"
+                >
+                  {classroomSpaces.map((_, i) => (
+                    <span
+                      key={i}
+                      onClick={() => setClassroomIndex(i)}
+                      style={{
+                        width: i === classroomIndex ? '16px' : '6px',
+                        height: '6px',
+                        borderRadius: '9999px',
+                        backgroundColor: i === classroomIndex ? '#FEF08A' : 'rgba(255, 255, 255, 0.65)',
+                        transition: 'all 0.3s ease',
+                        cursor: 'pointer'
+                      }}
+                      title={`Classroom Space ${i + 1}`}
+                    />
+                  ))}
+                </div>
+
                 <div className="about-floating-card">
                   <span className="about-floating-number">Aryan Springz, Phase 2</span>
                   <span className="about-floating-label">Kithaganur, Bangalore</span>
