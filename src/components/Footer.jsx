@@ -86,6 +86,11 @@ export default function Footer({ onOpenModal }) {
                 </Link>
               </li>
               <li>
+                <Link href="/admission-and-refund-policy" style={{ color: '#FFFFFF', textDecoration: 'underline', fontWeight: 600 }}>
+                  &rarr; Admission &amp; Fee Policy
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" style={{ color: '#FFFFFF', textDecoration: 'underline', fontWeight: 600 }}>
                   &rarr; Campus Visit, Map & Contact Details
                 </Link>
@@ -123,12 +128,26 @@ export default function Footer({ onOpenModal }) {
           <div>
             &copy; {new Date().getFullYear()} Appy Kidz International Pre School &bull; Kithaganur Campus, Bengaluru. All rights reserved.
           </div>
-          <div style={{ display: 'flex', gap: '16px' }}>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/" style={{ color: '#FFFFFF' }}>Home</Link>
             <Link href="/preschool-in-kithaganur" style={{ color: '#FFFFFF' }}>Preschool</Link>
             <Link href="/nursery-school-in-kithaganur" style={{ color: '#FFFFFF' }}>Nursery</Link>
             <Link href="/daycare-in-kithaganur" style={{ color: '#FFFFFF' }}>Daycare</Link>
             <Link href="/contact" style={{ color: '#FFFFFF' }}>Contact</Link>
+          </div>
+        </div>
+
+        {/* Legal & Compliance Links Bar */}
+        <div style={{ paddingTop: '12px', marginTop: '10px', borderTop: '1px dashed rgba(255,255,255,0.1)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)' }}>
+          <div>
+            Child-Proofed &amp; CCTV Monitored Campus &bull; Montessori &amp; Play-Way Early Learning
+          </div>
+          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+            <Link href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'underline' }}>Privacy Policy</Link>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <Link href="/terms-and-conditions" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'underline' }}>Terms &amp; Conditions</Link>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <Link href="/admission-and-refund-policy" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'underline' }}>Admission &amp; Refund Policy</Link>
           </div>
         </div>
       </div>
